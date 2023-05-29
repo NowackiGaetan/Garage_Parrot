@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" media="all">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Garage V.Parrot</title>
+    <description>Garage V.Parrot depuis 2002, entretien, réparation et vente de véhicules d'occasions de toutes marques.</description>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="assets/garageparrot.jpg" alt="logo garage parrot" class="logo-garage"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse list-activity" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#list-services">Mécanique</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#list-services">Entretien</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#used-cars">Véhicules d'occasions</a>
+                    </li>
+                </ul>
+
+                <span class="navbar-text">
+                    <button type="button" id="connect">Se connecter</button>
+                    <input type="radio" id="profesional" name="professional">
+                    <label for="professional">Profesionnel</label>
+                    <input type="radio" id="client" name="client">
+                    <label for="professional">Particulier</label>
+                </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="mecanic">
+            <img src="assets/garage1.jpg" alt="image d'un garagiste" class="garagiste" id="list-services">
+                <div class="services">
+                    <h3>Services</h3>
+                    <div class="list-services" >
+                        <ul>
+                            <li>Entretien et carosserie</li>
+                            <li>Révision du véhicule</li>
+                            <li>Vidange</li>
+                        </ul>
+                        <ul>
+                            <li>Freinage</li>
+                            <li>Pneus et géometrie</li>
+                            <li>Réparation et crevaison</li>
+                        </ul>
+                        <ul>
+                            <li>Climatisation</li>
+                            <li>Batterie</li>
+                            <li>Courroie de distribution</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <div class="used-cars" id="used-cars">
+            <h3>Véhicules d'occasion</h3>
+                <p>Filtrer vos recherches:</p>
+                <div class="filters">
+                    <label for="price">Prix:</label>
+
+                    <select id="price">
+                        <option value="">--Filtrer par prix:--</option>
+                        <option value="Moins de 5000€"> Moins de 5000€</option>
+                        <option value="De 5000 à 10000€"> De 5000 à 10000€</option>
+                        <option value="De 10000 à 15000€"> De 10000 à 15000€</option>
+                    
+                    </select>
+                    <label for="kilometre">Kilométrage:</label>
+
+                    <select id="kilometre">
+                        <option value="">--Filtrer par kilométrage:--</option>
+                        <option value="Moins de 100.000km"> Moins de 100000km</option>
+                        <option value="100000km à 150000km"> De 100000km à 150000km</option>
+                        <option value="De 150000km à 200000km"> De 150000km à 200000km</option>
+                    </select>
+                    <label for="year">Année:</label>
+
+                    <select id="year">
+                        <option value="">--Filtrer par année:--</option>
+                        <option value="Avant 2010"> Avant 2010</option>
+                        <option value="2010 à 2015"> De 2010 à 2015</option>
+                        <option value="De 2015 à 2023"> De 2015 à 2023</option>
+                    </select>
+                 </div>
+                <div class="list-cars">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/peugeot-855554_1280.jpg" class="card-img-top" alt="peugeot">
+                        <div class="card-body">
+                          <h5 class="card-title">Peugeot 206cc</h5>
+                          <div class="description-cars">
+                            <div class="description-left">
+                                <p class="card-text">
+                                    1.2L<br>
+                                    192120 km<br>
+                                    Essence<br>
+                                    2004<br>
+                                </p>
+                            </div>
+                            <div class="description-right">
+                                <p>8500€</p>
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img src="assets/auto-383897_1280.jpg" class="card-img-top" alt="audi">
+                        <div class="card-body">
+                          <h5 class="card-title">Audi A1</h5>
+                          <div class="description-cars">
+                            <div class="description-left">
+                                <p class="card-text">
+                                    1.2L<br>
+                                    73855 km<br>
+                                    Essence<br>
+                                    2016<br>
+                                </p>
+                            </div>
+                            <div class="description-right">
+                                <p>11200€</p>
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img src="assets/clio.jpg" class="card-img-top" alt="clio">
+                        <div class="card-body">
+                          <h5 class="card-title">Renault Clio</h5>
+                          <div class="description-cars">
+                            <div class="description-left">
+                                <p class="card-text">
+                                    1.5L<br>
+                                    123000 km<br>
+                                    Diesel<br>
+                                    2011<br>
+                                </p>
+                            </div>
+                            <div class="description-right">
+                                <p>10100€</p>
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>    
+</body>
+</html>

@@ -1,0 +1,116 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/*-------------Header------------------*/
+.logo-garage {
+  width: 250px;
+}
+
+.nav-item {
+  padding-left: 100px;
+}
+
+.nav-item a {
+  color: #f13333;
+  font-size: 1.5rem;
+}
+
+#connect {
+  color: #585E66;
+  background: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar-text label {
+  color: #8A1D1B;
+}
+
+/*-----------------Main-----------------*/
+main {
+  margin: 15px 250px;
+}
+
+.garagiste {
+  width: 100%;
+  height: 525px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+h3 {
+  background-color: #8A1D1B;
+  text-align: center;
+  color: #F4F4F4;
+  border: none;
+}
+
+.services {
+  background-color: #8A1D1B;
+  color: #F4F4F4;
+  font-size: 1.2rem;
+}
+
+.services li {
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+.list-services {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.used-cars {
+  margin-top: 15px;
+}
+
+.used-cars h3 {
+  color: #F4F4F4;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-cars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.list-cars img {
+  height: 190px;
+}
+
+.card-body h5 {
+  color: #8A1D1B;
+}
+
+.description-cars {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.description-left {
+  text-align: left;
+}
+
+.description-left p {
+  font-size: 1.2em;
+}
+
+.description-right p {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 50px;
+  color: #f13333;
+}/*# sourceMappingURL=style.css.map */
