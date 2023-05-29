@@ -69,13 +69,13 @@
             <h3>Véhicules d'occasion</h3>
                 <p>Filtrer vos recherches:</p>
                 <div class="filters">
-                    <label for="price">Prix:</label>
+                    <label for="infoprice">Prix:</label>
 
-                    <select id="price">
-                        <option value="">--Filtrer par prix:--</option>
-                        <option value="Moins de 5000€"> Moins de 5000€</option>
-                        <option value="De 5000 à 10000€"> De 5000 à 10000€</option>
-                        <option value="De 10000 à 15000€"> De 10000 à 15000€</option>
+                    <select id="infoprice" class="infoprice">
+                        <option value="" id="all">--Filtrer par prix:--</option>
+                        <option value="Moins de 5000€" id="smallprice"> Moins de 5000€</option>
+                        <option value="De 5000 à 10000€" id="mediumprice"> De 5000 à 10000€</option>
+                        <option value="De 10000 à 15000€" id="bigprice"> De 10000 à 15000€</option>
                     
                     </select>
                     <label for="kilometre">Kilométrage:</label>
@@ -96,7 +96,7 @@
                     </select>
                  </div>
                 <div class="list-cars">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card active" data-smallprice >
                         <img src="assets/peugeot-855554_1280.jpg" class="card-img-top" alt="peugeot">
                         <div class="card-body">
                           <h5 class="card-title">Peugeot 206cc</h5>
@@ -116,7 +116,7 @@
                           <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                       </div>
-                      <div class="card" style="width: 18rem;">
+                      <div class="card active" data-mediumprice >
                         <img src="assets/auto-383897_1280.jpg" class="card-img-top" alt="audi">
                         <div class="card-body">
                           <h5 class="card-title">Audi A1</h5>
@@ -136,7 +136,7 @@
                           <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                       </div>
-                      <div class="card" style="width: 18rem;">
+                      <div class="card active" data-bigprice>
                         <img src="assets/clio.jpg" class="card-img-top" alt="clio">
                         <div class="card-body">
                           <h5 class="card-title">Renault Clio</h5>
@@ -161,5 +161,6 @@
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>    
+    <script src="index.js"></script>
 </body>
 </html>
