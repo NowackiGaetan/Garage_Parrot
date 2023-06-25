@@ -70,7 +70,7 @@
                                 <p>8500€</p>
                             </div>
                           </div>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          
                         </div>
                       </div>
                       <div class="card active" data-mediumprice >
@@ -90,7 +90,7 @@
                                 <p>11200€</p>
                             </div>
                           </div>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          
                         </div>
                       </div>
                       <div class="card active" data-bigprice>
@@ -110,7 +110,7 @@
                                 <p>10100€</p>
                             </div>
                           </div>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          
                         </div>
                       </div>
                 </div>

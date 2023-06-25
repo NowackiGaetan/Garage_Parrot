@@ -1,7 +1,7 @@
 <header id="header">
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="assets/garageparrot.jpg" alt="logo garage parrot" class="logo-garage"></a>
+                <a class="navbar-brand" href="index.php"><img src="assets/garageparrot.jpg" alt="logo garage parrot" class="logo-garage"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -19,11 +19,10 @@
                     <li class="nav-item">
                     <a class="nav-link " href="#contact">Contact</a>
                     </li>
+                    <li class="nav-item">
+                    <a href="./connexion.php" class="link-connect" name="link-connect">Connexion</a>
+                    </li>               
                 </ul>
-
-                <span class="navbar-text">
-                    <button type="button" id="connect">Se connecter</button>
-                </span>
                 </div>
             </div>
         </nav>

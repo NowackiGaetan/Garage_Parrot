@@ -34,19 +34,18 @@ $myBlack:#0D0E0E;
     color: $myDarkRed;
 }
 
-.modal{
-    background: white;
+.link-connect:hover{
+    color: $myBlack;
+}
+
+/*------------Connexion---------*/
+
+.cnx{
+    height: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    z-index: 99;
-}
-
-.modal-close{
-    position: absolute;
-    right: 5px;
-    top: 5px;
 }
 
 /*-----------------Main-----------------*/
