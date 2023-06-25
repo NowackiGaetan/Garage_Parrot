@@ -1,0 +1,184 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/*-------------Header------------------*/
+.logo-garage {
+  width: 250px;
+}
+
+.nav-item {
+  padding-left: 100px;
+}
+
+.nav-item a {
+  color: #f13333;
+  font-size: 1.5rem;
+}
+
+#connect {
+  color: #585E66;
+  background: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar-text label {
+  color: #8A1D1B;
+}
+
+.modal {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 99;
+}
+
+.modal-close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+/*-----------------Main-----------------*/
+main {
+  margin: 15px 250px;
+}
+
+.garagiste {
+  width: 100%;
+  height: 525px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+h3 {
+  background-color: #8A1D1B;
+  text-align: center;
+  color: #F4F4F4;
+  border: none;
+}
+
+.services {
+  background-color: #8A1D1B;
+  color: #F4F4F4;
+  font-size: 1.2rem;
+}
+
+.services li {
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+.list-services {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.used-cars {
+  margin-top: 15px;
+}
+
+.used-cars h3 {
+  color: #F4F4F4;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-cars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.card.active {
+  width: 18rem;
+  margin-right: 15px;
+}
+
+.card.inactive {
+  display: none;
+}
+
+.list-cars img {
+  height: 190px;
+}
+
+.card-body h5 {
+  color: #8A1D1B;
+}
+
+.description-cars {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.description-left {
+  text-align: left;
+}
+
+.description-left p {
+  font-size: 1.2em;
+}
+
+.description-right p {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 50px;
+  color: #f13333;
+}
+
+/*------------Footer-----------------*/
+footer {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.infos-footer {
+  width: 100%;
+  background-color: #8A1D1B;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.note {
+  color: #0D0E0E;
+}
+
+.logo-trophee {
+  width: 75px;
+}
+
+footer a {
+  color: #0D0E0E;
+}
+
+footer a:hover {
+  color: #F4F4F4;
+}
+
+footer span {
+  color: #0D0E0E;
+}
+
+.back-to-top {
+  font-weight: 500;
+  font-size: 1rem;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}/*# sourceMappingURL=style.css.map */
