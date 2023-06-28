@@ -7,6 +7,10 @@ class User {
     private string $lastName;
     private array $roles = [];
 
+    public function sayHello(): string
+    {
+        return 'Bonjour '.$this->firstName.' '.$this->lastName;
+    }
     public function addRole(string $role): void
     {
         $this->roles[] = $role;

@@ -1,30 +1,18 @@
 <?php
-try{
-$pdo=new PDO('mysql:host=localhost;dbname=garageparrot','root','');
-}catch(PDOException $e){
- echo 'Erreur: Impossible de se connecter à la Base de Données';
- die();
-};
-
-if(!empty($_POST)){
-    extract($_POST);
-
-    if(isset($_POST['connect'])){
-        echo 'OK';
-    }else{
-        echo 'echec';
-    }
-}
-?>
-<?php
+require('actions/loginAction.php');
 include('./meta.php');
 include ("./header.php");
 ?>
 <div class="cnx">
     <form method="POST">
-        <input type="text" id="login" name="login" placeholder="Email">
+
+        <?php if(isset($errorMessage)){ echo '<p>'.$errorMessage.'</p>'; }?>
+
+        <input type="text" id="email" name="email" placeholder="Email">
         <input type="password" id="password" name="password" placeholder="Mot de passe">
         <button type="submit" name="connect" id="connect">Se connecter</button>
+        <br>
+        <a href="index.php" class="redirection"><p>Je suis pas employé du Garage Parrot, redirection vers la page principale.</p></a>
     </form>
 </div>
 <?php
