@@ -38,15 +38,26 @@ $myBlack:#0D0E0E;
     color: $myBlack;
 }
 
-/*------------Connexion---------*/
+/*------------Connexion/pageAdmin---------*/
 
-.cnx{
+.cnx, .carAdd {
     height: 70%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
+.carAdd input{
+    padding-bottom: 10px;
+}
+
+#addCar{
+    padding-top: 10px;
+}
+
+
 
 /*-----------------Main-----------------*/
 main{
@@ -190,3 +201,7 @@ footer span{
     top: 5px;
 }
 
+/*-----------------tesbdd---------------*/
+.testbdd{
+    height: 100vh;
+}

@@ -9,16 +9,17 @@ if(isset($_POST['connect'])){
         //Les données de l'utilisateur
         $user_email = htmlspecialchars($_POST['email']);
         //On ne crypte pas le mot de passe, on veut juste vérifier si le mot de passe est correct
-        $user_email = htmlspecialchars($_POST['password']);
+        $user_password = htmlspecialchars($_POST['password']);
 
         //Verification de l'existence de l'utilisateur
-        $checkIsUserExists= $pdo->prepare('SELECT * FROM users WHERE email = :email');
-        $checkIsUserExists->execute(array(':email' => $user_email));
+        $checkIsUserExists= $pdo->prepare('SELECT email FROM users WHERE email = ?');
+        $checkIsUserExists->execute(array($user_email));
 
-        if($checkIsUserExists->rowCount() > 0){
+        if($checkIsUserExists->rowCount() > 0 ){
 
+            
             //Recupération des données de l'utilisateur
-            $userInfos = $checkIsUserExists->fetch();
+            $userInfos = $checkIsUserExists->fetch((PDO::FETCH_ASSOC));
             //Verification du mot passe
             if(password_verify($user_password, $userInfos['password'])){
 

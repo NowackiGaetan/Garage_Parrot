@@ -1,8 +1,19 @@
 <?php
 require('actions/loginAction.php');
 include('./meta.php');
-include ("./header.php");
 ?>
+<header id="header">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.php"><img src="assets/garageparrot.jpg" alt="logo garage parrot" class="logo-garage"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                </div>
+            </div>
+        </nav>
+    </header>
 <div class="cnx">
     <form method="POST">
 

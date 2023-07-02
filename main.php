@@ -54,7 +54,7 @@
                  </div>
                 <div class="list-cars">
                     <div class="card active" data-smallprice >
-                        <img src="assets/peugeot-855554_1280.jpg" class="card-img-top" alt="peugeot">
+                        <img src="assets/peugeot.jpg" class="card-img-top" alt="peugeot">
                         <div class="card-body">
                           <h5 class="card-title">Peugeot 206cc</h5>
                           <div class="description-cars">
@@ -74,7 +74,7 @@
                         </div>
                       </div>
                       <div class="card active" data-mediumprice >
-                        <img src="assets/auto-383897_1280.jpg" class="card-img-top" alt="audi">
+                        <img src="assets/audi.jpg" class="card-img-top" alt="audi">
                         <div class="card-body">
                           <h5 class="card-title">Audi A1</h5>
                           <div class="description-cars">
@@ -94,7 +94,7 @@
                         </div>
                       </div>
                       <div class="card active" data-bigprice>
-                        <img src="assets/clio.jpg" class="card-img-top" alt="clio">
+                        <img src="assets/renault.jpg" class="card-img-top" alt="clio">
                         <div class="card-body">
                           <h5 class="card-title">Renault Clio</h5>
                           <div class="description-cars">
