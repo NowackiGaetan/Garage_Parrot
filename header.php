@@ -17,7 +17,7 @@
                     <a class="nav-link" href="#used-cars">Véhicules d'occasions</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link " href="#contact">Contact</a>
+                    <a class="nav-link " href="contact.php">Contact</a>
                     </li>
                     <li class="nav-item">
                     <a href="./connexion.php" class="link-connect" name="link-connect">Connexion</a>

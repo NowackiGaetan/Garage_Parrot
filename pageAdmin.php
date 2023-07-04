@@ -17,7 +17,7 @@ if (isset($_POST['addCar'])) {
     $req->bindParam(':dateAjout', $NOW);
     $req->execute();
 
-    header('Location: test.php');
+    //header('Location: test2.php');
 }
 
 
@@ -44,8 +44,11 @@ if (isset($_POST['addCar'])) {
             <input type="text" id="price" name="price" placeholder="Entrez le prix">
             </div>
             <div>
-            <input type="text" id="descrption" name="description" placeholder="Tapez la description">
+            <textarea id="description" name="description" placeholder="Tapez la description"></textarea>
             </div>
+            <div>
+           
+            
             
             <button type="submit" name="addCar" id="addCar">Ajouter véhicule</button>
         

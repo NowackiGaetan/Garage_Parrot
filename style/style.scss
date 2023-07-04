@@ -53,11 +53,6 @@ $myBlack:#0D0E0E;
     padding-bottom: 10px;
 }
 
-#addCar{
-    padding-top: 10px;
-}
-
-
 
 /*-----------------Main-----------------*/
 main{
@@ -113,7 +108,7 @@ h3{
 .list-cars{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 20px ;
 }
 
@@ -135,6 +130,7 @@ h3{
 }
 
 .description-cars{
+    position: relative;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -155,6 +151,40 @@ h3{
     color: $myRed;
 }
 
+.details{
+    //position: absolute;
+    //bottom: 5px;
+    //left: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(9, 143, 253);
+    color: rgb(200, 200, 200);
+    &:hover{
+        color: $myWhite;
+    }
+}
+
+.details summary{
+    background: white;
+    color: black
+}
+
+.container-cars{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+/*--------------------Contact--------------*/
+
+.contact-tel{
+    padding-top: 30px;
+    text-align: center;
+}
 
 /*------------Footer-----------------*/
 

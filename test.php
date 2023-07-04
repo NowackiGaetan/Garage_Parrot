@@ -1,17 +1,18 @@
-<ul>
 <?php
-include ('header.php');
 include ('meta.php');
+include ('header.php');
 require ('actions/database.php');
-
+?>
+<div class="container  container-cars">
+<?php
 $sql = 'SELECT * FROM cars ORDER BY dateAjout DESC';
 $req = $pdo->query($sql);
 while ($row = $req->fetch(PDO::FETCH_ASSOC)) 
     {
-        ?>
+?>
 
-
-        <div class="list-cars">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="list-cars col">
             <div class="card active">
                  <img src="assets/<?php echo $row['brand'];?>.jpg" class="card-img-top" alt="image-voiture">
                     <div class="card-body">
@@ -27,19 +28,20 @@ while ($row = $req->fetch(PDO::FETCH_ASSOC))
                                 <div class="description-right">
                                     <p><?php echo $row['price'];?>€</p>
                                 </div>
+                                <div>
+                                    <button type="button" class="btn btn-primary btn-details" id="btn-details">Détails</button>
+                                        <div class="details" style="display: none;">
+                                            <?php echo $row['description'];?>
+                                        </div>
+                                </div>        
                             </div>
                     </div>
             </div>
         </div>         
+    </div>
+    <?php
 
-        <?php
+}
+?>
+</div>
 
-    }
-    ?>
-</ul>
-
-<!--<div class="container  testbdd">
-    
-    <img src="export.php?id=2" />
-
-</div>-->

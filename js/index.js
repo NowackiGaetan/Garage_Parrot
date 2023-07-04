@@ -12,3 +12,22 @@ infoprices.addEventListener('change',function(){
         }
 }})
 
+let buttonEssai = document.querySelector(".button-essai");
+let resultatEssai = document.querySelector(".resultat-essai");
+
+/*buttonEssai.addEventListener('click',function(){
+            if(getComputedStyle(resultatEssai).display != "none"){
+                resultatEssai.style.display = "none";
+            }else{
+                resultatEssai.style.display = "block";
+            }
+})*/
+
+function togg(){
+    if(getComputedStyle(resultatEssai).display != "none"){
+      resultatEssai.style.display = "none";
+    } else {
+      resultatEssai.style.display = "block";
+    }
+  };
+  buttonEssai.onclick = togg;
