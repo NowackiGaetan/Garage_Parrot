@@ -1,11 +1,16 @@
 body {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 /*-------------Header------------------*/
 .logo-garage {
   width: 250px;
+}
+
+header {
+  width: 100%;
 }
 
 .nav-item {
@@ -46,12 +51,17 @@ body {
 }
 
 /*-----------------Main-----------------*/
-main {
+main, .container-used-cars, .infos, .mecanic {
   margin: 15px 250px;
 }
 
+.garagiste-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .garagiste {
-  width: 100%;
   height: 525px;
   align-items: center;
   margin-bottom: 5px;
@@ -82,6 +92,23 @@ h3 {
   justify-content: space-around;
 }
 
+/*----------------Used-cars-------------------*/
+.container-link-to-used-cars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  height: 20em;
+}
+
+.btn-warning {
+  width: 8em;
+  height: 3em;
+  font-weight: bold;
+  font-size: 2em;
+}
+
 .used-cars {
   margin-top: 15px;
 }
@@ -95,6 +122,17 @@ h3 {
   justify-content: space-between;
 }
 
+.infoPrice, .infoKm, .infoYear {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filters input[type=submit] {
+  margin-top: 10px;
+}
+
 .list-cars {
   display: flex;
   flex-direction: row;
@@ -102,9 +140,13 @@ h3 {
   padding-top: 20px;
 }
 
+.col {
+  display: flex;
+  justify-content: center;
+}
+
 .card.active {
   width: 18rem;
-  margin-right: 15px;
 }
 
 .card.inactive {
@@ -142,28 +184,26 @@ h3 {
   color: #f13333;
 }
 
-.details {
-  border: 1px solid grey;
-  border-radius: 5px;
-  padding: 10px;
-  background-color: rgb(9, 143, 253);
-  color: rgb(200, 200, 200);
-}
-.details:hover {
-  color: #F4F4F4;
-}
-
-.details summary {
-  background: white;
-  color: black;
-}
-
 .container-cars {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 10px;
+}
+
+.button-details {
+  text-align: center;
+  padding: 10px;
+}
+
+.custom-popover {
+  --bs-popover-max-width: 200px;
+  --bs-popover-border-color: var(--bs-primary);
+  --bs-popover-header-bg: var(--bs-primary);
+  --bs-popover-header-color: var(--bs-white);
+  --bs-popover-body-padding-x: 1rem;
+  --bs-popover-body-padding-y: .5rem;
 }
 
 /*--------------------Contact--------------*/
@@ -172,12 +212,89 @@ h3 {
   text-align: center;
 }
 
+.coms-place {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pseudo-coms {
+  border: 5px solid rgb(180, 180, 180);
+  width: 60%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.coms {
+  border: 5px solid #8A1D1B;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.date-coms {
+  width: 60%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: end;
+}
+
+/*------------------Avis-----------------*/
+.container-commentaire {
+  padding: 30px;
+}
+
+/*----------------infos----------------*/
+.infos {
+  display: inline-block;
+}
+
+.container-infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infos-left {
+  width: 40%;
+}
+
+.infos-right {
+  width: 60%;
+  text-align: end;
+}
+
+.photo-garage, .horaires {
+  width: 100%;
+}
+
+.horaires {
+  background-color: #585E66;
+  color: white;
+  border-radius: 15px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.photo-plan {
+  width: 90%;
+}
+
 /*------------Footer-----------------*/
 footer {
+  position: relative;
   width: 100%;
   font-size: 1.2rem;
   font-weight: bold;
-  position: relative;
 }
 
 .infos-footer {
@@ -213,10 +330,13 @@ footer span {
   font-size: 1rem;
   position: absolute;
   right: 5px;
-  top: 5px;
+  bottom: 5px;
 }
 
-/*-----------------tesbdd---------------*/
-.testbdd {
-  height: 100vh;
+.back-to-top-replace {
+  display: none;
+}
+
+.horaires-replace {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

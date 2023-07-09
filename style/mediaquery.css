@@ -1,0 +1,75 @@
+@media screen and (min-width: 1301px) {
+  .list-activity ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .nav-item {
+    padding-left: 60px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .nav-item a {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mecanic, .container-link-to-used-cars, .infos {
+    margin: 0;
+  }
+  .infos {
+    width: 100%;
+  }
+  .container-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .infos-left {
+    width: 80%;
+  }
+  .horaires {
+    font-size: 1.2rem;
+  }
+  .infos-right {
+    width: 100%;
+    text-align: center;
+  }
+  footer {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 740px) {
+  .infos-footer span {
+    display: none;
+  }
+  .horaires-replace {
+    display: block;
+  }
+  .back-to-top {
+    display: none;
+  }
+  .back-to-top-replace {
+    display: block;
+  }
+}
+@media screen and (max-width: 585px) {
+  .services ul {
+    font-size: 1.1rem;
+  }
+  .cnx form {
+    display: flex;
+    flex-direction: column;
+  }
+  .cnx input, .cnx button {
+    margin: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .services ul {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=mediaquery.css.map */
