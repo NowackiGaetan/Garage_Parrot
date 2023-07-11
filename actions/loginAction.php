@@ -8,36 +8,35 @@ if (isset($_POST['connect'])) {
 
         //Les données de l'utilisateur
         $user_email = htmlspecialchars($_POST['email']);
-        //On ne crypte pas le mot de passe, on veut juste vérifier si le mot de passe est correct
-        $user_password = htmlspecialchars($_POST['password']);
+        $user_password = password_hash($_POST['password'], PASSWORD_BCRYPT);
 
         //Verification de l'existence de l'utilisateur
-        $checkIsUserExists = $pdo->prepare('SELECT password FROM users WHERE email = ?');
+        $checkIsUserExists = $pdo->prepare('SELECT * FROM users WHERE email = ?');
         $checkIsUserExists->execute(array($user_email));
 
         if ($checkIsUserExists->rowCount() > 0) {
 
 
             //Recupération des données de l'utilisateur
-            $userInfos = $checkIsUserExists->fetch((PDO::FETCH_ASSOC));
-            print_r($userInfos);
-            //Verification du mot passe
-            if ($user_password == $userInfos['password']) {
+            $userInfos = $checkIsUserExists->fetch();
 
-                //Authentification de l'utilisateur
-                $_SESSION['auth'] = true;
-                $_SESSION['id'] = $userInfos['id'];
-                $_SESSION['email'] = $userInfos['email'];
+            //Authentification de l'utilisateur
+            $_SESSION['auth'] = true;
+            $_SESSION['id'] = $userInfos['id'];
+            $_SESSION['email'] = $userInfos['email'];
 
-                //Redirection
-                header('Location: index.php');
+            //Redirection
+            if ($userInfos['id'] == 1) {
+                header('Location: pageAdmin.php');
             } else {
-                $errorMessage = "Votre mot de passe est incorrect";
+                header('Location: pageEmploye.php');
             }
         } else {
-            $errorMessage = "Votre email est incorrect";
+            $errorMessage = "Votre mot de passe est incorrect";
         }
     } else {
-        $errorMessage = "Veuillez compléter tous les champs...";
+        $errorMessage = "Votre email  est incorrect";
     }
+} else {
+    $errorMessage = "Veuillez compléter tous les champs...";
 }

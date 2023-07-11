@@ -6,7 +6,7 @@
             <br>
             <span>Basé sur l'expérience de nos clients</span>
         </div>
-        <a href="avis.php">***Je donne mon avis***</a>
+        <a href="avis.php" class="btn btn-warning">Voir les avis</a>
         <span>Horaires d'ouverture<br>
             lun.: 8:45 -12:00, 14:00-18:00 <br>
             mar.: 8:45 -12:00, 14:00-18:00 <br>

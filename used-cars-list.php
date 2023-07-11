@@ -7,7 +7,7 @@ require('header.php');
 <div class="container-used-cars">
     <h3>Véhicules d'occasion</h3>
     <!------------- Filtre ----------->
-    <form method="POST">
+    <form method="GET">
         <p>Filtrer vos recherches:</p>
         <div class="filters">
             <div class="infoPrice">
@@ -29,7 +29,7 @@ require('header.php');
                     <option value="15000">15 000</option>
                     <option value="20000">20 000</option>
                 </select>
-                <input type="submit" value="Filtrer par prix" class="btn btn-primary" name="filterPrice">
+                <input type="submit" value="Filtrer" class="btn btn-filter btn-warning" name="filterPrice">
             </div>
 
             <div class="infoKm">
@@ -40,7 +40,7 @@ require('header.php');
                     <option value="150000"> Moins de150000km</option>
                     <option value="200000"> Moins de 200000km</option>
                 </select>
-                <input type="submit" value="Filtrer par kilométrage" class="btn btn-primary" name="filterKm">
+                <input type="submit" value="Filtrer" class="btn btn-filter btn-warning" name="filterKm">
             </div>
 
             <div class="infoYear">
@@ -51,7 +51,7 @@ require('header.php');
                     <option value="2015"> A partir de 2010</option>
                     <option value="2023"> A partir de 2015</option>
                 </select>
-                <input type="submit" value="Filtrer par année" class="btn btn-primary" name="filterYear">
+                <input type="submit" value="Filtrer" class="btn btn-filter btn-warning" name="filterYear">
             </div>
         </div>
         <br>
@@ -70,3 +70,5 @@ require('header.php');
         </div>
     </div>
 </div>
+<?php
+include('footer.php');

@@ -38,6 +38,20 @@ header {
 }
 
 /*------------Connexion/pageAdmin---------*/
+.action-admin {
+  height: 15%;
+  padding: 20px;
+}
+
+.action-admin a {
+  color: #f13333;
+  font-size: 1.2rem;
+}
+
+.containerCarAdd h3 {
+  background: none;
+}
+
 .cnx, .carAdd {
   height: 70%;
   width: 100%;
@@ -46,12 +60,63 @@ header {
   align-items: center;
 }
 
-.carAdd input {
-  padding-bottom: 10px;
+.containerCarAdd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carAdd form {
+  width: 50%;
+}
+
+.carAdd form div {
+  padding: 10px;
+}
+
+.carAdd form div:nth-child(8) {
+  display: flex;
+  justify-content: center;
+}
+
+.carAdd form div:nth-child(7) {
+  margin-top: 5px;
+}
+
+.carAdd {
+  width: 100%;
+  flex-direction: column;
+}
+
+.carAdd input, .carAdd textarea {
+  width: 100%;
+  margin: 0.8rem;
+  padding: 10px;
+  border: 1px solid grey;
+}
+
+/*----------------Inscriptions----------------*/
+.container-inscription {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 50%;
+}
+
+.container-inscription form {
+  padding: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-inscription input {
+  margin: 10px;
+  width: 100%;
 }
 
 /*-----------------Main-----------------*/
-main, .container-used-cars, .infos, .mecanic {
+main, .container-used-cars, .infos, .mecanic, .container-avis-client {
   margin: 15px 250px;
 }
 
@@ -62,7 +127,7 @@ main, .container-used-cars, .infos, .mecanic {
 }
 
 .garagiste {
-  height: 525px;
+  width: 80%;
   align-items: center;
   margin-bottom: 5px;
 }
@@ -120,6 +185,10 @@ h3 {
 .filters {
   display: flex;
   justify-content: space-between;
+}
+
+.btn-filter.btn-dtl {
+  width: auto;
 }
 
 .infoPrice, .infoKm, .infoYear {
@@ -249,6 +318,59 @@ h3 {
 }
 
 /*------------------Avis-----------------*/
+.rect-red {
+  background: #8A1D1B;
+  height: 10px;
+  width: 100%;
+}
+
+.container-avis-client h2 {
+  text-align: center;
+}
+
+.avis-client {
+  display: flex;
+}
+
+.avis-client-left div {
+  padding: 10px;
+  background: #8A1D1B;
+  color: #F4F4F4;
+  border-radius: 15px;
+}
+
+.give-avis {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.give-avis button, .container-link-to-used-cars button, .infos-footer {
+  width: auto;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 5px 5px 5px #060606;
+}
+
+.avis-client-left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.avis-client-right {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.avis-client-right img {
+  width: 100%;
+}
+
 .container-commentaire {
   padding: 30px;
 }

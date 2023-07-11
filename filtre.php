@@ -1,13 +1,14 @@
 <?php
 
-$minPrice = $_POST['minPrice'];
-$maxPrice = $_POST['maxPrice'];
-$kilometrage = $_POST['kilometrage'];
-$year = $_POST['year'];
+$minPrice = $_GET['minPrice'] ?? null;
+$maxPrice = $_GET['maxPrice'] ?? null;
+$kilometrage = $_GET['kilometrage'] ?? null;
+$year = $_GET['year'] ?? null;
 
 $baseSql = "SELECT * FROM cars";
 $conditionSql = "";
 $conditions = array();
+
 
 
 if ($minPrice) {

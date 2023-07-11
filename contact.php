@@ -22,7 +22,7 @@ require('meta.php');
                 <label for="exampleFormControlTextarea1" class="form-label">Ecrivez votre message</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <button type="submit" class="btn btn-warning">Envoyer</button>
         </form>
     </div>
     <div class="contact-tel">

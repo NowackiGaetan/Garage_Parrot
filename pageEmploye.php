@@ -56,11 +56,8 @@ if (isset($_POST['addCar'])) {
         </div>
     </nav>
 </header>
-<h1 class="title-admin" style="text-align:center">Page Admin</h1>
-<div class="action-admin">
-    <a href="inscription.php">Inscrire un nouvel employé</a>
-</div>
 <div class="containerCarAdd">
+    <h1 style="text-align:center">Page Employé</h1><br><br><br>
     <h3 style="text-align:center">Ajouter un véhicule à la vente</h3>
     <div class="carAdd">
         <form method="POST">

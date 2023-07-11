@@ -11,7 +11,7 @@ include('./meta.php');
         </div>
     </nav>
 </header>
-<div class="cnx">
+<div class="container cnx">
     <form method="POST">
 
         <?php if (isset($errorMessage)) {

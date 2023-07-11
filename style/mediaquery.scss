@@ -17,12 +17,30 @@
     
     .nav-item a{
         font-size: 1.2rem; 
-    }   
+    }  
+    .avis-client{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .avis-client-left,.avis-client-right{
+        width: 100%;
+    }
+    .avis-client-right img{
+        width: 70%;
+    }
+    .avis-client-right{
+        display: flex;
+        justify-content: center;
+    } 
 }
 
 @media screen and (max-width: 1000px){
-    .mecanic, .container-link-to-used-cars, .infos{
+    .mecanic, .container-link-to-used-cars, .infos, .container-avis-client{
         margin:0;    
+    }
+    .avis-client-left{
+        width: 75%;
     }
     .infos{
         width: 100%;

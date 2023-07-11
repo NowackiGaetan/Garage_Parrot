@@ -17,7 +17,7 @@
             </div>
             <br><br>
             <div class="details">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal">
+                <button type="button" class="btn btn-warning btn-dtl" data-bs-toggle="modal" data-bs-target="#infoModal">
                     Détails
                 </button>
                 <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">

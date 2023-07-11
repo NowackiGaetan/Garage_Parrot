@@ -5,6 +5,9 @@
     <?php
     require_once('./meta.php');
     require_once('./header.php');
+    ?>
+    <div id="garageStatus"></div>
+    <?php
     require_once('./main.php');
     ?>
     <div class="container container-link-to-used-cars" id="used-cars">
@@ -12,6 +15,7 @@
         <a href="used-cars-list.php"><button type="button" class="btn btn-warning">Je fonce</button></a>
     </div>
     <?php
+    require_once('./avis-client.php');
     require_once('infos.php');
     require_once('./footer.php');
     ?>
