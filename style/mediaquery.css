@@ -1,3 +1,15 @@
+@media screen and (max-width: 1400px) {
+  .container-used-cars {
+    margin: 0;
+  }
+  .list-cars {
+    width: 85%;
+  }
+  .box-card {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 1301px) {
   .list-activity ul {
     width: 100%;
@@ -30,6 +42,15 @@
     justify-content: center;
   }
 }
+@media screen and (max-width: 1070px) {
+  .list-cars {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box-card {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1000px) {
   .mecanic, .container-link-to-used-cars, .infos, .container-avis-client {
     margin: 0;
@@ -58,6 +79,10 @@
   }
   footer {
     font-size: 1rem;
+  }
+  .filters {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (max-width: 740px) {

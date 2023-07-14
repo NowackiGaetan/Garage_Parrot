@@ -12,14 +12,26 @@ require('meta.php');
 </header>
 <div class="container-contact">
     <div class="container">
-        <h5>Contactez-nous par mail:</h5>
+        <h5>Contactez-nous:</h5>
         <form method="post" action="https://formspree.io/f/myyajbbj">
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Adresse Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <label for="exampleFormControlInput1" class="form-label">Nom:</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Ecrivez votre message</label>
+                <label for="exampleFormControlInput1" class="form-label">Prénom:</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Adresse Email:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Téléphone:</label>
+                <input type="tel" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Ecrivez votre message:</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <button type="submit" class="btn btn-warning">Envoyer</button>

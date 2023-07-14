@@ -4,21 +4,18 @@
     <div class="avis-client">
         <div class="avis-client-left">
             <div>
-                <p>Josiane le 06-06-2023</p>
-                <p>5/5</p>
+                <p>Josiane</p>
                 <p>Merci à Mathias de m'avoir si bien conseillé pour la réparation de ma voiture. Je recommande fortement!</p>
             </div>
             <div>
-                <p>Franck le 20-02-2023</p>
-                <p>5/5</p>
-                <p>Je recherchais une voiture d'occasion mais avecdes critères très précis pour l'utilisation quotidienne mais aussi pour mes déplacemens pro.
+                <p>Franck</p>
+                <p>Je recherchais une voiture d'occasion mais avec des critères très précis pour l'utilisation quotidienne mais aussi pour mes déplacements pro.
                     J'ai trouvé mon bonheur, équipe sérieuse.
                 </p>
             </div>
             <div>
-                <p>Gilles le 11-12-2022</p>
-                <p>4.3/5</p>
-                <p>Très bon garage! Les pièces sont commandées assez rapidement malgeé un petir soucis avec le transporteur pour la livraison mais tout est rentré dans l'ordre rapidement, équipe réactive.</p>
+                <p>Gilles</p>
+                <p>Très bon garage! Les pièces sont commandées assez rapidement malgré un petit soucis avec le transporteur pour la livraison mais tout est rentré dans l'ordre rapidement, équipe réactive.</p>
             </div>
         </div>
         <div class="avis-client-right">

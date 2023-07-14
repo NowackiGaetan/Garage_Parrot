@@ -8,7 +8,7 @@ require('meta.php');
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.php"><img src="assets/garageparrot.jpg" alt="logo garage parrot" class="logo-garage"></a>
-            <a href="index.php" class="back-index"> Retour à l'accueil</span></a>
+            <a href="pageAdmin.php" class="back-index"> Retour à la page précédente</span></a>
         </div>
         </div>
     </nav>

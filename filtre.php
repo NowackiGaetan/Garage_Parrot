@@ -25,7 +25,7 @@ if ($kilometrage) {
 }
 
 if ($year) {
-    $conditions[] = "year <= $year";
+    $conditions[] = "year >= $year";
 }
 
 if (count($conditions) > 0) {

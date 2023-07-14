@@ -1,5 +1,4 @@
 <?php
-
 include('meta.php');
 include('actions/loginAction.php');
 
@@ -58,7 +57,8 @@ if (isset($_POST['addCar'])) {
 </header>
 <h1 class="title-admin" style="text-align:center">Page Admin</h1>
 <div class="action-admin">
-    <a href="inscription.php">Inscrire un nouvel employé</a>
+    <a href="inscription.php">Inscrire un nouvel employé</a><br><br>
+    <a href="validation-coms.php">Traiter les commentaires clients</a>
 </div>
 <div class="containerCarAdd">
     <h3 style="text-align:center">Ajouter un véhicule à la vente</h3>

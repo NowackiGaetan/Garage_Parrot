@@ -27,7 +27,6 @@ require('meta.php');
     <div>
         <?php
         if (isset($_POST['post-coms'])) {
-            //include ('actions/database.php');
             $NOW = date('Y-m-d H:i:s');
             $reqComs = $pdo->prepare("INSERT INTO commentaires (pseudo, coms, date_coms) VALUES (:pseudo, :coms, :date_coms)");
             $reqComs->bindParam(':pseudo', $_POST['pseudo']);
@@ -39,7 +38,7 @@ require('meta.php');
     </div>
     <div class="coms-place">
         <?php
-        $sql = 'SELECT * FROM commentaires ORDER BY date_coms DESC';
+        $sql = 'SELECT * FROM commentaires WHERE approved = 1 ORDER BY date_coms DESC';
         $reqComs = $pdo->query($sql);
         foreach ($reqComs as $row) {
         ?>
@@ -52,6 +51,7 @@ require('meta.php');
             <div class="date-coms">
                 <?php echo $row['date_coms']; ?>
             </div>
+
             <br><br><br><br>
         <?php }
         ?>

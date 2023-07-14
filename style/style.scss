@@ -137,7 +137,6 @@ main, .container-used-cars,.infos,.mecanic,.container-avis-client{
 
 .garagiste{
     width: 80%;
-    // height: 525px;
     align-items: center;
     margin-bottom: 5px;
 }
@@ -190,7 +189,7 @@ h3{
 }
 
 .used-cars h3{
-    color: $myWhite;
+    color: white;
 }
 
 .filters{
@@ -213,21 +212,12 @@ h3{
     margin-top: 10px;
 }
 
-
-.list-cars{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 20px ;
-}
-
-
 .col{
     display: flex;
     justify-content: center;
 }
 
-.card.active{
+.card{
     width: 18rem;
     
 }
@@ -266,6 +256,21 @@ h3{
     color: $myRed;
 }
 
+#carouselExample{
+    height:300px;
+}
+
+.carousel-inner{
+    height: 100%;
+}
+
+.carousel-item{
+    height: 100%;
+}
+
+.carousel-item img{
+    height: 100%;
+}
 
 .container-cars{
     display: flex;
@@ -278,6 +283,16 @@ h3{
 .button-details{
     text-align: center;
     padding: 10px;   
+}
+
+.details, .contact-auto{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-auto{
+    flex-direction: column;
+    align-items: center;
 }
 
 .custom-popover {

@@ -11,7 +11,7 @@
     require_once('./main.php');
     ?>
     <div class="container container-link-to-used-cars" id="used-cars">
-        <h2 class="text-center"> Cliquez ici pour découvrir nos véhicules d'occasions</h2>
+        <h2 class="text-center"> Découvrez nos véhicules d'occasions ici</h2>
         <a href="used-cars-list.php"><button type="button" class="btn btn-warning">Je fonce</button></a>
     </div>
     <?php

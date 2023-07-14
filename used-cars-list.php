@@ -47,9 +47,9 @@ require('header.php');
                 <label for="year">Année:</label>
                 <select id="year" name="year">
                     <option value="0">--Filtrer par année:--</option>
-                    <option value="2010"> A partir de 2005</option>
-                    <option value="2015"> A partir de 2010</option>
-                    <option value="2023"> A partir de 2015</option>
+                    <option value="2005"> A partir de 2005</option>
+                    <option value="2010"> A partir de 2010</option>
+                    <option value="2015"> A partir de 2015</option>
                 </select>
                 <input type="submit" value="Filtrer" class="btn btn-filter btn-warning" name="filterYear">
             </div>
