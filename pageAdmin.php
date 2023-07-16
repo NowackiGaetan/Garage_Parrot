@@ -38,17 +38,9 @@ if (isset($_POST['addCar'])) {
                         <a class="nav-link " href="contact.php">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <?php
-                        if (isset($_SESSION['auth']) == true) {
-                        ?>
-                            <a href="actions/logoutAction.php"><button type="button" class="btn btn-danger">Se déconnecter</button></a>
-                        <?php } else {
-                        ?>
-                            <a href="./connexion.php" class="link-connect" name="link-connect">Connexion</a>
-                            <br>
-                        <?php
-                            echo 'Vous n\'êtes pas connecté';
-                        } ?>
+
+                        <a href="actions/logoutAction.php"><button type="button" class="btn btn-danger">Se déconnecter</button></a>
+
                     </li>
                 </ul>
             </div>

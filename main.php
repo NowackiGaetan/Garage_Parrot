@@ -1,9 +1,8 @@
 <?php
-//include('meta.php');
-//include('header.php');
-include('actions/database.php');
+include('meta.php');
+
 ?>
-<!-- <div class="container "> -->
+
 <div class="mecanic">
     <div class="garagiste-div">
         <img src="assets/garage1.jpg" alt="image d'un garagiste" class="garagiste" id="list-services">
@@ -30,5 +29,3 @@ include('actions/database.php');
     </div>
 </div>
 <br>
-
-<!-- </div> -->

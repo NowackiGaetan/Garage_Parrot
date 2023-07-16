@@ -8,7 +8,7 @@ if (isset($_POST['connect'])) {
 
         //Les données de l'utilisateur
         $user_email = htmlspecialchars($_POST['email']);
-        $user_password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+        $user_password = htmlspecialchars($_POST['password']);
 
         //Verification de l'existence de l'utilisateur
         $checkIsUserExists = $pdo->prepare('SELECT * FROM users WHERE email = ?');
@@ -16,27 +16,28 @@ if (isset($_POST['connect'])) {
 
         if ($checkIsUserExists->rowCount() > 0) {
 
-
             //Recupération des données de l'utilisateur
             $userInfos = $checkIsUserExists->fetch();
+            $hashedPassword = $userInfos['password'];
+            if (password_verify($user_password, $hashedPassword)) {
+                //Authentification de l'utilisateur
+                $_SESSION['auth'] = true;
+                $_SESSION['id'] = $userInfos['id'];
+                $_SESSION['email'] = $userInfos['email'];
 
-            //Authentification de l'utilisateur
-            $_SESSION['auth'] = true;
-            $_SESSION['id'] = $userInfos['id'];
-            $_SESSION['email'] = $userInfos['email'];
-
-            //Redirection
-            if ($userInfos['id'] == 1) {
-                header('Location: pageAdmin.php');
+                //Redirection
+                if ($userInfos['id'] == 1) {
+                    header('Location: pageAdmin.php');
+                } else {
+                    header('Location: pageEmploye.php');
+                }
             } else {
-                header('Location: pageEmploye.php');
+                $errorMessage = "Votre mot de passe est incorrect";
             }
         } else {
-            $errorMessage = "Votre mot de passe est incorrect";
+            $errorMessage = "Votre email  est incorrect";
         }
     } else {
-        $errorMessage = "Votre email  est incorrect";
+        $errorMessage = "Veuillez compléter tous les champs...";
     }
-} else {
-    $errorMessage = "Veuillez compléter tous les champs...";
 }

@@ -1,33 +1,29 @@
-let hourOpen = 8;
-let hourClose = 18;
+function afficherStatutGarage() {
+  let dateActuelle = new Date();
+  let jourSemaine = dateActuelle.getDay();
+  let heure = dateActuelle.getHours();
 
-function getHourNow() {
-  let now = new Date();
-  let hour = now.getHours();
-
-  if (minutes < 10) {
-    minutes = "0" + minutes; 
+  if (jourSemaine === 0) {
+    // Dimanche
+    document.getElementById("garageStatus").textContent = "Le garage est fermé aujourd'hui. Ouverture demain à 8h.";
+  } else if (jourSemaine === 6) {
+    // Samedi
+    if (heure >= 8 && heure < 12) {
+      document.getElementById("garageStatus").textContent = "Le garage est ouvert aujourd'hui de 8h à 12h.";
+    } else {
+      document.getElementById("garageStatus").textContent = "Le garage est fermé aujourd'hui.";
+    }
+  } else {
+    // Lundi à vendredi
+    if (heure >= 8 && heure < 18) {
+      document.getElementById("garageStatus").textContent = "Le garage est ouvert aujourd'hui de 8h à 18h.";
+    } else {
+      document.getElementById("garageStatus").textContent = "Le garage est fermé aujourd'hui.";
+    }
   }
-return hour + ":" + minutes;
 }
 
-function garageOpen(){
-  let hourNow = new Date().getHours();
-  let dayNow = new Date().getDay();
+window.onload = function() {
+  afficherStatutGarage();
+};
 
-  if((dayNow === 0 || dayNow === 6) || (dayNow === 5 && hourNow < hourClose) || (hourNow >= hourOpen && hourNow < hourClose)){
-    return true;
-  }else{
-    return false;
-  }
-}
-
-function garageStatus(){
-  let garageStatusElement = document.getElementById('garageStatus');
-  let statut = garageOpen() ? "ouvert" : "fermé";
-  let horaires = "Heure d'ouverture : " + hourOpen +"h - " + hourClose +"h." ;
-
-  garageStatusElement.textContent = "Le garage V.Parrot est actuellement " + statut + " | " + horaires;
-}
-
-garageStatus();
