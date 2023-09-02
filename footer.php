@@ -7,14 +7,14 @@
             <span>Basé sur l'expérience de nos clients</span>
         </div>
         <a href="avis.php" class="btn btn-warning">Voir les avis</a>
-        <span>Horaires d'ouverture<br>
-            lun.: 8:00 -12:00, 14:00-18:00 <br>
+        <span id="horaires">Horaires d'ouverture<br>
+            <!-- lun.: 8:00 -12:00, 14:00-18:00 <br>
             mar.: 8:00 -12:00, 14:00-18:00 <br>
             mer.: 8:00 -12:00, 14:00-18:00 <br>
             jeu.: 8:00 -12:00, 14:00-18:00 <br>
             ven.: 8:00 -12:00, 14:00-18:00 <br>
             sam.: 8:00 -12:00 <br>
-            dim.: Fermé
+            dim.: Fermé -->
         </span>
         <a class="horaires-replace">Horaires</a>
         <a href="#header" class="back-to-top">Haut de la page</a>

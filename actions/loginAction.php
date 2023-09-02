@@ -1,6 +1,7 @@
 <?php
 require('actions/database.php');
 
+
 //Validation du formulaire
 if (isset($_POST['connect'])) {
     //Verifie si les champs sont remplis
@@ -8,6 +9,37 @@ if (isset($_POST['connect'])) {
 
         //Les données de l'utilisateur
         $user_email = htmlspecialchars($_POST['email']);
+        function is_valid_password($user_password)
+        {
+            // Vérifier la longueur
+            if (strlen($user_password) < 10) {
+                return false;
+            }
+
+            // Vérifier au moins 1 chiffre
+            if (!preg_match('/\d/', $user_password)) {
+                return false;
+            }
+
+            // Vérifier au moins 1 majuscule
+            if (!preg_match('/[A-Z]/', $user_password)) {
+                return false;
+            }
+
+            // Vérifier au moins 1 minuscule
+            if (!preg_match('/[a-z]/', $user_password)) {
+                return false;
+            }
+
+            // Vérifier au moins 1 caractère spécial
+            if (!preg_match('/[!@#$%^&*()\-_=+{};:,<.>]/', $user_password)) {
+                return false;
+            }
+
+            // Si toutes les conditions sont satisfaites, le mot de passe est valide
+            return true;
+        }
+
         $user_password = htmlspecialchars($_POST['password']);
 
         //Verification de l'existence de l'utilisateur

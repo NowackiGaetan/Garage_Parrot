@@ -110,6 +110,11 @@
   .cnx input, .cnx button {
     margin: 30px;
   }
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 400px) {
   .services ul {

@@ -1,6 +1,6 @@
 <?php
 include('meta.php');
-
+include('envoi-service.php');
 ?>
 
 <div class="mecanic">
@@ -26,6 +26,18 @@ include('meta.php');
                 <li>Courroie de distribution</li>
             </ul>
         </div>
+        <h1>Services</h1>
+        <ul>
+            <?php
+            foreach ($services as $service) : ?>
+                <li><?php echo $service; ?></li>
+            <?php endforeach; ?>
+        </ul>
+        <div>
+            <ul id="serviceList"></ul>
+        </div>
     </div>
 </div>
+<script src="js/affichage-service.js"></script>
+<script src="js/services.js"></script>
 <br>

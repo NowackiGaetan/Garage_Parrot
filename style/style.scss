@@ -45,6 +45,14 @@ header{
 
 /*------------Connexion/pageAdmin---------*/
 
+.box-admin{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2em;
+}
+
 .action-admin{
     height: 15%;
     padding: 20px;
@@ -57,6 +65,7 @@ header{
 
 .containerCarAdd h3{
     background: none;
+    padding-top: 1.5em;
 }
 
 .cnx, .carAdd {
@@ -72,6 +81,9 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width:100%;
+    border: 1px solid black;
+    margin: 2em;
 }
 
 .carAdd form{
@@ -93,7 +105,8 @@ header{
 
 .carAdd{
     width: 100%;
-    flex-direction: column;    
+    flex-direction: column;
+    height: 100%;    
 }
 
 .carAdd input, .carAdd textarea{
@@ -269,15 +282,15 @@ h3{
 }
 
 .carousel-item img{
-    height: 100%;
+    height: auto;
 }
 
 .container-cars{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     padding: 10px;
+    flex-wrap: wrap
 }
 
 .button-details{

@@ -22,7 +22,10 @@
 @media screen and (max-width: 1300px){
     .nav-item{
         padding-left: 60px;   
-    }   
+    } 
+    .container-cars{
+        display: ;
+    }  
     
 }
 
@@ -45,6 +48,13 @@
     .avis-client-right{
         display: flex;
         justify-content: center;
+    }
+    .container-cars{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        margin-top: 2em;
     }
     
 }
@@ -120,6 +130,10 @@
     }
     .cnx input,.cnx button{
         margin: 30px;
+    }.modal-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 }
 
