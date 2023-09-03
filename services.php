@@ -54,4 +54,4 @@
     </div>
 </form>
 
-<script src="js/services.js"></script>
+<!-- <script src="js/services.js"></script> -->

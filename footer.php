@@ -7,7 +7,7 @@
             <span>Basé sur l'expérience de nos clients</span>
         </div>
         <a href="avis.php" class="btn btn-warning">Voir les avis</a>
-        <span id="horaires">Horaires d'ouverture<br>
+        <span id="horaires-container">Horaires d'ouverture<br>
             <!-- lun.: 8:00 -12:00, 14:00-18:00 <br>
             mar.: 8:00 -12:00, 14:00-18:00 <br>
             mer.: 8:00 -12:00, 14:00-18:00 <br>
@@ -23,3 +23,5 @@
             </svg></a>
     </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/affichage-horaires.js"></script>

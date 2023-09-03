@@ -1,15 +1,22 @@
 <?php
 require('actions/database.php');
 
-$result = $pdo->query('SELECT jour_semaine, horaire FROM horaires_garage');
 
-$horaires = array();
+$jour_semaine = $_POST['jour_semaine'];
+$horaire_ouverture_matin = $_POST['horaire_ouverture_matin'];
+$horaire_fermeture_matin = $_POST['horaire_fermeture_matin'];
+$horaire_ouverture_aprem = $_POST['horaire_ouverture_aprem'];
+$horaire_fermeture_aprem = $_POST['horaire_fermeture_aprem'];
 
-if ($result->rowCount() > 0) {
-    while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
-        $horaires[] = $row;
-    }
+$sql = "UPDATE horaires_garage SET
+        horaire_ouverture_matin = '$horaire_ouverture_matin',
+        horaire_fermeture_matin = '$horaire_fermeture_matin',
+        horaire_ouverture_aprem = '$horaire_ouverture_aprem',
+        horaire_fermeture_aprem = '$horaire_fermeture_aprem'
+        WHERE jour_semaine = '$jour_semaine'";
+
+if ($pdo->query($sql) === TRUE) {
+    echo "Horaires mis à jour avec succès !";
+} else {
+    echo "Erreur lors de la mise à jour des horaires : ";
 }
-
-header('Content-Type: application/json');
-echo json_encode($horaires);

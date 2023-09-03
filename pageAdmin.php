@@ -3,7 +3,6 @@ include('meta.php');
 include('actions/loginAction.php');
 $photos = array();
 if (isset($_POST['addCar'])) {
-    var_dump($_FILES['addCarImg']);
 
     for ($i = 0; $i < count($_FILES['addCarImg']["name"]); $i++) {
         if (is_uploaded_file($_FILES['addCarImg']['tmp_name'][$i])) {
@@ -50,17 +49,11 @@ if (isset($_POST['addCar'])) {
     $req->bindParam(':dateAjout', $NOW);
     $req->execute();
 
-    $brand = $_POST['brand'];
-    $sql = "SELECT * FROM cars WHERE brand = '$brand'";
-    $cars = $pdo->query($sql);
-    foreach ($cars as $car) {
-        for ($i = 0; $i < count($photos); $i++) {
-            $isMain = $i == 0 ? 1 : 0;
-            $id = $car['id'];
-            $reqPhotos = $pdo->prepare("INSERT INTO cars_img (path, id_car, is_main) VALUES ('./assets/photo/$photos[$i]', $id, $isMain)");
-            var_dump($reqPhotos);
-            $reqPhotos->execute();
-        }
+    $last_id = $pdo->lastInsertId();
+    for ($i = 0; $i < count($photos); $i++) {
+        $isMain = $i == 0 ? 1 : 0;
+        $reqPhotos = $pdo->prepare("INSERT INTO cars_img (path, id_car, is_main) VALUES ('./assets/photo/$photos[$i]', $last_id, $isMain)");
+        $reqPhotos->execute();
     }
 }
 

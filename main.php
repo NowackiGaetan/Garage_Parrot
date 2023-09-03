@@ -38,6 +38,4 @@ include('envoi-service.php');
         </div>
     </div>
 </div>
-<script src="js/affichage-service.js"></script>
-<script src="js/services.js"></script>
 <br>
