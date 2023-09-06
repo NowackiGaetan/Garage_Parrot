@@ -493,4 +493,19 @@ footer span {
 
 .horaires-replace {
   display: none;
+}
+
+/*-------------------------Bouton Success-----------------------*/
+#message-success {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #009b05;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

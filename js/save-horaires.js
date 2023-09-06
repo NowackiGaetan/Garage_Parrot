@@ -17,11 +17,20 @@ function sauvegarderHoraires() {
             horaire_fermeture_aprem: horaire_fermeture_aprem
         },
         success: function (response) {
-            alert("Horaires sauvegardés avec succès !");
+            function showSuccessMessage(message) {
+                var successMessage = document.getElementById("message-success");
+                successMessage.textContent = message;
+                successMessage.style.backgroundColor = "#4CAF50"; 
+                successMessage.style.display = "block"; 
+                setTimeout(function () {
+                    successMessage.style.display = "none"; 
+                }, 3000); 
+            }
+            
+            // Utilisation
+            showSuccessMessage("Horaires sauvegardés avec succès !");
+            
         }
     });
 }
 
-$(document).ready(function () {
-        sauvegarderHoraires();
-});

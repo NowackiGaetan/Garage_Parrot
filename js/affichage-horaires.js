@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const item = dataHoraires[i];
                 const divElement = document.createElement('div');
                 if (item.jour_semaine === 'Samedi') {
-                    divElement.textContent = `${item.jour_semaine}: ${item.jour_semaine}: ${item.horaire_ouverture_matin_format} - ${item.horaire_fermeture_matin_format} , Fermé l'après-midi`;
+                    divElement.textContent = `${item.jour_semaine}: ${item.horaire_ouverture_matin_format} - ${item.horaire_fermeture_matin_format} , Fermé l'après-midi`;
                 } else if (item.jour_semaine === 'Dimanche') {
                     divElement.textContent = `${item.jour_semaine}: Fermé`;
                 } else {

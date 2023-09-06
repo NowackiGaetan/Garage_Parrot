@@ -26,5 +26,6 @@
         <button type="button" class="btn btn-success" onclick="sauvegarderHoraires()">Sauvegarder les horaires</button>
     </div>
 </form>
+<div id="message-success" class="hidden">Horaires sauvegardés avec succès !</div>
 <script src="./js/save-horaires.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
