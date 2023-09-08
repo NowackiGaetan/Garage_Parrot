@@ -1,10 +1,10 @@
 <?php require('meta.php'); ?>
 <div class="infos">
-    <h3>Horaires d'ouverture et plan</h3>
+    <h3>Adresse du Garage</h3>
     <div class="container-infos">
         <div class="infos-left">
             <img class="photo-garage" src="assets/photo-garage.jpg" alt="photo garage">
-            <div class="horaires">
+            <div class="horaires" id="block-horaire">
                 lun.: 8:00 -12:00, 14:00-18:00 <br>
                 mar.: 8:00 -12:00, 14:00-18:00 <br>
                 mer.: 8:00 -12:00, 14:00-18:00 <br>

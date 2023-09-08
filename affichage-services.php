@@ -1,10 +1,19 @@
 <?php
 require("actions/database.php");
 
-$query = "SELECT * FROM services WHERE service_active = 1";
-$result = $conn->query($query);
+$query = "SELECT service_id, service_description FROM services WHERE service_active = 1";
+$result = $pdo->query($query);
 
 $services = array();
-while ($row = $result->fetch_assoc()) {
-    $services[] = $row["service_name"];
+
+if ($result->rowCount() > 0) {
+    while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+        $services[] = $row;
+    }
 }
+
+// Définir le type de contenu de la réponse comme JSON
+header('Content-Type: application/json');
+
+// Renvoyer les données JSON
+echo json_encode($services);

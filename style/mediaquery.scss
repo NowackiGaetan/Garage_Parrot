@@ -1,4 +1,16 @@
 @media screen and (max-width: 1400px){
+    .mecanic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .services{
+        width:40%;
+    }
+
+}
+
+@media screen and (max-width: 1400px){
     .container-used-cars{
         margin: 0;
     }
@@ -26,6 +38,10 @@
     .container-cars{
         display: ;
     }  
+    .avis-client-left div{
+        font-size: 1.5em;
+        margin: 0.5em;
+    }
     
 }
 
@@ -102,7 +118,11 @@
     .filters{
         flex-direction: column;
         align-items: center;
-    } 
+    }
+    .garagiste-div{
+        width: 75%;
+    }
+
 }
 
 @media screen and (max-width: 740px){
@@ -110,6 +130,9 @@
         display: none;
     }
     .horaires-replace{
+        display: block;
+    }
+    .horaires{
         display: block;
     }
     .back-to-top{

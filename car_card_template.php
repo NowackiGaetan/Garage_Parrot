@@ -1,6 +1,8 @@
 <div class="card-h-100 box-card">
     <div class="card active">
-        <img src="%PHOTO_PATH%" class="card-img-top" alt="image-voiture">
+        <div class="div-img-car">
+            <img src="%PHOTO_PATH%" class="card-img-top" alt="image-voiture">
+        </div>
         <div class="card-body">
             <h5 class="card-title">%%BRAND%% %%MODEL%%</h5>
             <div class="description-cars">

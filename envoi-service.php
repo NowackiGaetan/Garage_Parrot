@@ -1,66 +1,8 @@
 <?php
 require('actions/database.php');
 
-// if (isset($_POST['save_button'])) {
-//     // Assurez-vous que vous avez une connexion PDO à la base de données ici
-//     try {
-//         $pdo = new PDO("mysql:host=your_host;dbname=your_database", "your_username", "your_password");
-//         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-//         // Définissez le tableau des noms de services
-//         $services = array(
-//             "ent-caro",
-//             "revision",
-//             "vidange",
-//             "freinage",
-//             "pneu-geo",
-//             "crevaison",
-//             "climatisation",
-//             "batterie",
-//             "distribution"
-//         );
-
-//         // Parcourez les noms des services et mettez à jour la base de données si la case à cocher est cochée
-//         foreach ($services as $service) {
-//             $service_name = strtolower(str_replace(' ', '_', $service));
-
-//             if (isset($_POST[$service_name])) {
-//                 // La case à cocher est cochée, mettez à jour la base de données
-//                 $sql = "UPDATE services SET service_active = 1 WHERE service_name = :service_name";
-//                 $stmt = $pdo->prepare($sql);
-//                 $stmt->bindParam(':service_name', $service, PDO::PARAM_STR);
-//                 $stmt->execute();
-//             }
-//         }
-
-//         // Fermez la connexion PDO
-//         $pdo = null;
-
-//         echo "Mise à jour réussie.";
-//     } catch (PDOException $e) {
-//         echo "Erreur : " . $e->getMessage();
-//     }
-// }
-
-// Récupérez les données envoyées depuis la page HTML
 $data = $_POST;
 
-// Parcourez les données et mettez à jour la table "service" en conséquence
-// foreach ($data as $service_name => $service_value) {
-//     // Utilisez une requête SQL pour mettre à jour la colonne "service_active"
-//     $query = "UPDATE services SET service_active = " . (int)$service_value . " WHERE service_name = '" . $service_name . "'";
-
-//     if ($pdo->query($query) === TRUE) {
-//         // La mise à jour a réussi
-//         echo "Mise à jour réussie pour " . $service_name . "\n";
-//     } else {
-//         // Erreur lors de la mise à jour
-//         echo "Erreur lors de la mise à jour pour " . $service_name . "\n";
-//         echo "Requête SQL : " . $query . "\n";
-//         echo "service_name : " . $service_name . "\n";
-//         echo "service_value : " . $service_value . "\n";
-//     }
-// }
 try {
 
     $data = $_POST;
@@ -77,7 +19,6 @@ try {
 
     $query = "UPDATE services SET service_active = :value WHERE service_name = :name";
 
-    // Mettez à jour la base de données pour la case à cocher "ent-caro"
     $stmt = $pdo->prepare($query);
     $stmt->bindParam(':value', $entCaro, PDO::PARAM_INT);
     $stmt->bindValue(':name', 'ent-caro', PDO::PARAM_STR);
@@ -117,8 +58,6 @@ try {
 
 
     $pdo = null;
-
-    echo "Mises à jour réussies dans la base de données.";
 } catch (PDOException $e) {
     // Erreur de connexion à la base de données
     die("Erreur de connexion à la base de données : " . $e->getMessage());

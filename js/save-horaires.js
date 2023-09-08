@@ -27,7 +27,6 @@ function sauvegarderHoraires() {
                 }, 3000); 
             }
             
-            // Utilisation
             showSuccessMessage("Horaires sauvegardés avec succès !");
             
         }

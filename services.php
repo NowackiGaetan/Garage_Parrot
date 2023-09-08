@@ -2,39 +2,39 @@
     <div>
         <div style="display: flex; align-items: center">
             <label style="width:50%" for="ent-caro">Entretien et carosserie</label>
-            <input type="checkbox" class="check-service" id="ent-caro" name='ent-caro' value="ent-caro">
+            <input type="checkbox" class="check-service" id="ent-caro" name='ent-caro' value="ent-caro" checked>
         </div>
         <div style="display: flex; align-items: center">
             <label style="width:50%" for="revision">Révision du véhicule</label>
-            <input type="checkbox" class="check-service" id="revision" name='revision' value="revision">
+            <input type="checkbox" class="check-service" id="revision" name='revision' value="revision" checked>
         </div>
         <div style="display: flex; align-items: center">
             <label style="width:50%" for="vidange">Vidange</label>
-            <input type="checkbox" class="check-service" id="vidange" name="vidange" value="vidange">
+            <input type="checkbox" class="check-service" id="vidange" name="vidange" value="vidange" checked>
         </div>
         <div style="display: flex; align-items: center">
             <label style="width:50%" for="freinage">Freinage</label>
-            <input type="checkbox" class="check-service" id="freinage" name="freinage" value="freinage">
+            <input type="checkbox" class="check-service" id="freinage" name="freinage" value="freinage" checked>
         </div>
         <div style="display: flex; align-items: center">
             <label style="width:50%" for="pneu-geo">Pneus et géometrie</label>
-            <input type="checkbox" class="check-service" id="pneu-geo" name="pneu-geo" value="pneu-geo">
+            <input type="checkbox" class="check-service" id="pneu-geo" name="pneu-geo" value="pneu-geo" checked>
         </div>
         <div style="display: flex; align-items: center">
             <label style="width:50%" for="crevaison">Réparation et crevaison</label>
-            <input type="checkbox" class="check-service" id="crevaison" name="crevaison" value="crevaison">
+            <input type="checkbox" class="check-service" id="crevaison" name="crevaison" value="crevaison" checked>
         </div>
         <div style="display: flex; align-items: center">
             <label style="width:50%" for="climatisation">Climatisation</label>
-            <input type="checkbox" class="check-service" id="climatisation" name="climatisation" value="climatisation">
+            <input type="checkbox" class="check-service" id="climatisation" name="climatisation" value="climatisation" checked>
         </div>
         <div style="display: flex; align-items: center">
             <label style="width:50%" for="batterie">Batterie</label>
-            <input type="checkbox" class="check-service" id="batterie" name="batterie" value="batterie">
+            <input type="checkbox" class="check-service" id="batterie" name="batterie" value="batterie" checked>
         </div>
         <div style="display: flex; align-items: center">
             <label style="width:50%" for="distribution">Courroie de distribution</label>
-            <input type="checkbox" class="check-service" id="distribution" name="distribution" value="distribution">
+            <input type="checkbox" class="check-service" id="distribution" name="distribution" value="distribution" checked>
         </div>
         <div style="text-align:center">
             <button type="button" id="saveButton" class="btn btn-success" name="savebutton">Sauvegarder les services</button>
