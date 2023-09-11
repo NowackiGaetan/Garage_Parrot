@@ -1,9 +1,9 @@
 <?php
 
-try{
+try {
     session_start();
-    $pdo = new PDO("mysql:host=localhost;dbname=garageparrot", "root","");
-}catch(PDOException $e){
+    $options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
+    $pdo = new PDO("mysql:host=localhost;dbname=garageparrot", "root", "", $options);
+} catch (PDOException $e) {
     die("Impossible de se connecter à la base de donnée:"  . $e->getMessage());
 }
-

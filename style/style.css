@@ -37,6 +37,11 @@ header {
   color: #0D0E0E;
 }
 
+.decon {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 /*------------Connexion/pageAdmin---------*/
 .box-admin {
   display: flex;
@@ -107,6 +112,12 @@ header {
   margin: 0.8rem;
   padding: 10px;
   border: 1px solid grey;
+}
+
+.infos-footer-admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*----------------Inscriptions----------------*/

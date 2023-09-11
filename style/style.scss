@@ -43,6 +43,11 @@ header{
     color: $myBlack;
 }
 
+.decon{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 /*------------Connexion/pageAdmin---------*/
 
 .box-admin{
@@ -116,6 +121,11 @@ header{
     border:1px solid grey;
 }
 
+.infos-footer-admin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*----------------Inscriptions----------------*/
 

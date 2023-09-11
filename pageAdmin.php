@@ -1,6 +1,10 @@
 <?php
 include('meta.php');
 include('actions/loginAction.php');
+if (!isset($_SESSION['auth_token']) || empty($_SESSION['auth_token'])) {
+    header('Location: connexion.php');
+    exit;
+}
 $photos = array();
 if (isset($_POST['addCar'])) {
 
@@ -61,27 +65,9 @@ if (isset($_POST['addCar'])) {
 <header id="header">
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.php"><img src="assets/garageparrot.jpg" alt="logo garage parrot" class="logo-garage"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse list-activity" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#list-services">Mécanique/Entretien</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#used-cars">Véhicules d'occasions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="contact.php">Contact</a>
-                    </li>
-                    <li class="nav-item">
-
-                        <a href="actions/logoutAction.php"><button type="button" class="btn btn-danger">Se déconnecter</button></a>
-
-                    </li>
-                </ul>
+            <img src="assets/garageparrot.jpg" alt="logo garage parrot" class="logo-garage">
+            <div class="decon">
+                <a href="actions/logoutAction.php"><button type="button" class="btn btn-danger">Se déconnecter</button></a>
             </div>
         </div>
     </nav>
@@ -142,3 +128,8 @@ if (isset($_POST['addCar'])) {
     </div>
 </div>
 </div>
+<footer>
+    <div class="infos-footer-admin">
+        <a href="#header" class="btn btn-warning back-to-top">Haut de page</a>
+    </div>
+</footer>

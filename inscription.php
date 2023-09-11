@@ -16,30 +16,6 @@ require('actions/securepassword.php');
 
 <?php
 
-// if (isset($_POST['envoi'])) {
-//     if (!empty($_POST['email']) && !empty($_POST['mdp'])) {
-//         $email = htmlspecialchars($_POST['email']);
-//         $mdp = password_hash($_POST['mdp'], PASSWORD_BCRYPT);
-//         $insertUser = $pdo->prepare("INSERT INTO users(email, password) VALUES (? , ?)");
-//         $insertUser->execute(array($email, $mdp));
-
-//         if ($insertUser) {
-//             echo '<div class="alert alert-success" role="alert">Le compte a bien été créé</div>';
-//         } else {
-//             echo '<div class="alert alert-danger" role="alert">Le compte n\'a pas été créé</div>';
-//         }
-
-//         $recupUser = $pdo->prepare("SELECT * FROM users WHERE email =? AND password =?");
-//         $recupUser->execute(array($email, $mdp));
-//         if ($recupUser->rowCount() > 0) {
-//             $_SESSION['email'] = $email;
-//             $_SESSION['mdp'] = $mdp;
-//             $_SESSION['id'] = $recupUser->fetch(PDO::FETCH_ASSOC)['id'];
-//         }
-//     } else {
-//         echo "Veuillez remplir tous les champs...";
-//     }
-// }
 if (isset($_POST['envoi'])) {
     if (!empty($_POST['email']) && !empty($_POST['mdp'])) {
         $email = htmlspecialchars($_POST['email']);

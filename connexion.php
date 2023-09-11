@@ -1,6 +1,7 @@
 <?php
 require('actions/loginAction.php');
 include('./meta.php');
+
 ?>
 <header id="header">
     <nav class="navbar navbar-expand-lg ">
@@ -20,6 +21,7 @@ include('./meta.php');
 
         <input type="text" id="email" name="email" placeholder="Email">
         <input type="password" id="password" name="password" placeholder="Mot de passe">
+        <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
         <button type="submit" name="connect" id="connect">Se connecter</button>
         <br>
         <a href="index.php" class="redirection">
