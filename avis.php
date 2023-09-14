@@ -27,12 +27,20 @@ require('meta.php');
     <div>
         <?php
         if (isset($_POST['post-coms'])) {
+            $pseudo = htmlspecialchars($_POST['pseudo']);
+            $coms = htmlspecialchars($_POST['coms']);
             $NOW = date('Y-m-d H:i:s');
             $reqComs = $pdo->prepare("INSERT INTO commentaires (pseudo, coms, date_coms) VALUES (:pseudo, :coms, :date_coms)");
             $reqComs->bindParam(':pseudo', $_POST['pseudo']);
             $reqComs->bindParam(':coms', $_POST['coms']);
             $reqComs->bindParam(':date_coms', $NOW);
             $reqComs->execute();
+
+            try {
+                $reqComs->execute();
+            } catch (PDOException $e) {
+                die("Erreur lors de l'insertion du commentaire : " . $e->getMessage());
+            }
         }
         ?>
     </div>

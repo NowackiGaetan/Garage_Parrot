@@ -5,43 +5,37 @@ include('actions/loginAction.php');
 
 if (isset($_POST['addCar'])) {
     include('actions/database.php');
-    $NOW = date('Y-m-d H:i:s');
-    $req = $pdo->prepare("INSERT INTO cars (brand, model, kilometrage, fuel, year, price, description, dateAjout) VALUES (:brand, :model, :kilometrage, :fuel, :year, :price, :description, :dateAjout)");
-    $req->bindParam(':brand', $_POST['brand']);
-    $req->bindParam(':model', $_POST['model']);
-    $req->bindParam(':kilometrage', $_POST['kilometrage']);
-    $req->bindParam(':fuel', $_POST['fuel']);
-    $req->bindParam(':year', $_POST['year']);
-    $req->bindParam(':price', $_POST['price']);
-    $req->bindParam(':description', $_POST['description']);
-    $req->bindParam(':dateAjout', $NOW);
-    $req->execute();
-}
 
+    if (!empty($_POST['brand']) && !empty($_POST['model']) && !empty($_POST['kilometrage']) && !empty($_POST['fuel']) && !empty($_POST['year']) && !empty($_POST['price']) && !empty($_POST['description'])) {
+
+        $NOW = date('Y-m-d H:i:s');
+        $req = $pdo->prepare("INSERT INTO cars (brand, model, kilometrage, fuel, year, price, description, dateAjout) VALUES (:brand, :model, :kilometrage, :fuel, :year, :price, :description, :dateAjout)");
+        $req->bindParam(':brand', $_POST['brand']);
+        $req->bindParam(':model', $_POST['model']);
+        $req->bindParam(':kilometrage', $_POST['kilometrage']);
+        $req->bindParam(':fuel', $_POST['fuel']);
+        $req->bindParam(':year', $_POST['year']);
+        $req->bindParam(':price', $_POST['price']);
+        $req->bindParam(':description', $_POST['description']);
+        $req->bindParam(':dateAjout', $NOW);
+
+        if ($req->execute()) {
+            echo '<div class="alert alert-success" role="alert">La voiture a été ajoutée avec succès</div>';
+        } else {
+            echo '<div class="alert alert-danger" role="alert">Erreur lors de l\'ajout de la voiture</div>';
+        }
+    } else {
+        echo '<div class="alert alert-danger" role="alert">Veuillez remplir tous les champs du formulaire</div>';
+    }
+}
 
 ?>
 <header id="header">
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.php"><img src="assets/garageparrot.jpg" alt="logo garage parrot" class="logo-garage"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse list-activity" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#list-services">Mécanique/Entretien</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#used-cars">Véhicules d'occasions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="contact.php">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="actions/logoutAction.php"><button type="button" class="btn btn-danger">Se déconnecter</button></a>
-                    </li>
-                </ul>
+            <img src="assets/garageparrot.jpg" alt="logo garage parrot" class="logo-garage">
+            <div class="decon">
+                <a href="actions/logoutAction.php"><button type="button" class="btn btn-danger">Se déconnecter</button></a>
             </div>
         </div>
     </nav>
@@ -72,8 +66,8 @@ if (isset($_POST['addCar'])) {
             <div>
                 <textarea id="description" name="description" placeholder="Tapez la description"></textarea>
             </div>
-            <div>
-
+            <div style="text-align:center">
+                <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                 <button type="submit" name="addCar" id="addCar" class="btn btn-success">Ajouter véhicule</button>
             </div>
         </form>

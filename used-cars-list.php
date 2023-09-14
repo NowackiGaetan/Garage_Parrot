@@ -1,5 +1,4 @@
 <?php
-// require('actions/database.php');
 require('data.php');
 require('meta.php');
 require('header.php');
@@ -39,19 +38,6 @@ require('header.php');
             </select>
         </div>
     </div>
-
-    <!-------------AFFICHAGE DES RESULTATS  ----------->
-    <!-- <div class="container-cars">
-        <div class="list-cars row row-cols-1 row-cols-md-3 g-4">
-            <?php
-            //  include('filtre.php');
-            //  foreach ($result as $row) {
-            // include("affichagecars.php");
-            //  };
-            ?>
-
-        </div>
-    </div> -->
 </div>
 <div id="container-cars" class="container-cars"></div>
 <?php

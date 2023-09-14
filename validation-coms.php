@@ -54,13 +54,13 @@ require('meta.php');
                     }
                 ?>
                     <div class="pseudo-coms">
-                        <?php echo $row['pseudo']; ?>
+                        <?php echo htmlspecialchars($row['pseudo']); ?>
                     </div>
                     <div class="coms">
-                        <?php echo $row['coms']; ?>
+                        <?php echo htmlspecialchars($row['coms']); ?>
                     </div>
                     <div class="date-coms">
-                        <?php echo $row['date_coms']; ?>
+                        <?php echo htmlspecialchars($row['date_coms']); ?>
                     </div>
                     <form method="POST" action="">
                         <input type="hidden" name="commentaireId" value="<?php echo $row["coms_id"] ?>">
@@ -75,4 +75,3 @@ require('meta.php');
         </div>
     </div>
 </form>
-<?php

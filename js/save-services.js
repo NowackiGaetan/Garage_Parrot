@@ -3,8 +3,7 @@ $(document).ready(function() {
     $("#saveButton").click(function() {
         let data = {};       
         let servicesCheck = $(".check-service");
-       
-        
+               
         $(servicesCheck).each(function() {
             var service_name = $(this).attr("name");
             var service_value = $(this).prop("checked") ? 1 : 0;  

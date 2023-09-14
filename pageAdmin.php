@@ -108,7 +108,8 @@ if (isset($_POST['addCar'])) {
                     <input multiple type="file" id="addCarImg" name="addCarImg[]" accept="image/png, image/jpeg" />
                 </div>
 
-                <div>
+                <div style="text-align:center">
+                    <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                     <button type="submit" name="addCar" id="addCar" class="btn btn-success">Ajouter véhicule</button>
                 </div>
             </form>

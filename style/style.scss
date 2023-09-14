@@ -88,7 +88,7 @@ header{
     align-items: center;
     width:100%;
     border: 1px solid black;
-    margin: 2em;
+    margin-bottom: 1.5em;
 }
 
 .carAdd form{
@@ -143,8 +143,9 @@ header{
 }
 
 .container-inscription input{
-    margin: 10px;
+    margin: 1.5em;
     width: 100%;
+    border: 2px solid grey;
 }
 
 /*-----------------Main-----------------*/
@@ -434,7 +435,7 @@ h3{
     background: #8A1D1B;
     color: #F4F4F4;
     border-radius: 15px;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .give-avis{

@@ -27,6 +27,5 @@ function is_valid_password($mdp)
         return false;
     }
 
-    // Si toutes les conditions sont satisfaites, le mot de passe est valide
     return true;
 }

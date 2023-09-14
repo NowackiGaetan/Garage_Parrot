@@ -57,6 +57,7 @@ if (isset($_POST['envoi'])) {
     <form method="POST">
         <input type="text" name="email" placeholder="Email">
         <input type="password" name="mdp" placeholder="Mot de passe">
+        <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
         <br>
         <input class="btn btn-primary" type="submit" value="Inscription de l'employé" name="envoi">
     </form>

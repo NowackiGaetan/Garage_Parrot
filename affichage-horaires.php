@@ -10,15 +10,14 @@ DATE_FORMAT(horaire_fermeture_aprem, '%H:%i') AS horaire_fermeture_aprem_format
 FROM horaires_garage";
 $result = $pdo->query($sql);
 
-$horaires = array();
+try {
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
 
-// Récupérer les données et les stocker dans un tableau associatif
-if ($result->rowCount() > 0) {
-    while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
-        $horaires[] = $row;
-    }
+    $horaires = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    header('Content-Type: application/json');
+    echo json_encode($horaires);
+} catch (PDOException $e) {
+    die("Erreur lors de l'exécution de la requête : " . $e->getMessage());
 }
-
-// Renvoyer les données au format JSON
-header('Content-Type: application/json');
-echo json_encode($horaires);

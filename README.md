@@ -8,15 +8,12 @@ Pour la connexion Admin:
 -email : bob@lepatron.com
 -mdp: p44tr00n
 
--email : cedric@employe.com
--mdp: employe1
+-email : richard@employe.com
+-mdp: Motdepasse1!
 
 Pour alimenter la bdd en voiture:
--saisir TOUT EN MINUSCULE
 -remplir tout les champs
--pour les photos, j'utilise 3 photos dont une que j'appelle avec 2 différents noms, FORMAT JPG
-(exemple pour rajouter une bmw: bmw.jpg, bmw1.jpg, bmw2.jpg, bmw3.jpg)
-Une photo pour la photo principale, et les 1,2,3 pour le carrousel.
+-pour les photos, FORMAT JPG, la photo principale est aussi la première photo du caroussel. La BDD indique à uen colonne qui indique le chemin de la photo.
 
 Pour ajouter un employé: email et mot de passe.
 
