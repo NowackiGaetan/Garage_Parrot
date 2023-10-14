@@ -1,12 +1,7 @@
 @media screen and (max-width: 1400px){
-    .mecanic {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .services{
-        width:40%;
-    }
+    // .services{
+    //     width:40%;
+    // }
 
 }
 
@@ -89,6 +84,11 @@
 @media screen and (max-width: 1000px){
     .mecanic, .container-link-to-used-cars, .infos, .container-avis-client{
         margin:0;    
+    }
+    .mecanic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;      
     }
     .avis-client-left{
         width: 75%;

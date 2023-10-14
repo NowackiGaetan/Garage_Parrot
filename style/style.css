@@ -145,7 +145,6 @@ header {
 main,
 .container-used-cars,
 .infos,
-.mecanic,
 .container-avis-client {
   margin: 15px 250px;
 }
@@ -174,7 +173,6 @@ main,
 }
 
 .mecanic {
-  margin-left: 250px;
   display: flex;
   justify-content: center;
 }
