@@ -2,6 +2,10 @@
 
 include('meta.php');
 include('actions/loginAction.php');
+if (!isset($_SESSION['auth_token']) || empty($_SESSION['auth_token'])) {
+    header('Location: connexion.php');
+    exit;
+}
 
 if (isset($_POST['addCar'])) {
     include('actions/database.php');
@@ -65,6 +69,9 @@ if (isset($_POST['addCar'])) {
             </div>
             <div>
                 <textarea id="description" name="description" placeholder="Tapez la description"></textarea>
+            </div>
+            <div>
+                <input multiple type="file" id="addCarImg" name="addCarImg[]" accept="image/png, image/jpeg" />
             </div>
             <div style="text-align:center">
                 <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">

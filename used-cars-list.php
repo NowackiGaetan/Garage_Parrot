@@ -9,33 +9,21 @@ require('header.php');
     <p>Filtrer vos recherches:</p>
     <div class="filters">
         <div class="infoPrice">
-            <label for="filterPrice">Prix:</label>
-            <select id="filterPrice">
-                <option value="">Tous</option>
-                <option value="10000">Moins de 10 000</option>
-                <option value="15000">Moins de 15 000</option>
-                <option value="20000">Moins de 20 000</option>
-            </select>
+            <label for="filterPrice">Prix en Euros inférieur à:</label>
+            <input type="range" id="filterPrice" name="filterPrice" min="0" max="25000" value="25000" step="1000" oninput="numPrice.value = this.value">
+            <output id="numPrice">25000</output>
         </div>
 
         <div class="infoKm">
-            <label for="filterKilometrage">Kilométrage:</label>
-            <select id="filterKilometrage">
-                <option value="">Tous</option>
-                <option value="100000">Moins de 100 000 km</option>
-                <option value="150000">Moins de 150 000 km</option>
-                <option value="200000">Moins de 200 000 km</option>
-            </select>
+            <label for="filterKilometrage">Kilométrage inférieur:</label>
+            <input type="range" id="filterKilometrage" name="filterKilometrage" min="0" max="300000" value="200000" step="10000" oninput="numKm.value = this.value">
+            <output id="numKm">150000</output>
         </div>
 
         <div class="infoYear">
-            <label for="filterYear">Année:</label>
-            <select id="filterYear">
-                <option value="">Tous</option>
-                <option value="2005">Après 2005</option>
-                <option value="2010">Après 2010</option>
-                <option value="2015">Après 2015</option>
-            </select>
+            <label for="filterYear">Année supérieure à:</label>
+            <input type="range" id="filterYear" name="filterYear" min="2000" max="2023" value="2000" step="1" oninput="numYear.value = this.value">
+            <output id="numYear"></output>
         </div>
     </div>
 </div>

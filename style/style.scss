@@ -1,578 +1,589 @@
-body{
-    width: 100%;
-    height: 100%;
-    position: relative;
+body {
+	width: 100%;
+	height: 100%;
+	position: relative;
 }
 
 $myRed: #f13333;
-$myDarkRed:#8A1D1B;
-$myGrey:#585E66;
-$myWhite:#F4F4F4;
-$myBlack:#0D0E0E;
+$myDarkRed: #8a1d1b;
+$myGrey: #585e66;
+$myWhite: #f4f4f4;
+$myBlack: #0d0e0e;
 
 /*-------------Header------------------*/
-.logo-garage{
-    width: 250px;
+.logo-garage {
+	width: 250px;
 }
 
-header{
-    width: 100%;
+header {
+	width: 100%;
 }
 
-.nav-item{
-    padding-left: 100px;   
+.nav-item {
+	padding-left: 100px;
 }
 
-.nav-item a{
-    color: $myRed;
-    font-size: 1.5rem;
+.nav-item a {
+	color: $myRed;
+	font-size: 1.5rem;
 }
 
-#connect{
-    color: $myGrey;
-    background: white;
-    font-weight: bold;
-    font-size: 1.2rem;
+#connect {
+	color: $myGrey;
+	background: white;
+	font-weight: bold;
+	font-size: 1.2rem;
 }
 
-.navbar-text label{
-    color: $myDarkRed;
+.navbar-text label {
+	color: $myDarkRed;
 }
 
-.link-connect:hover{
-    color: $myBlack;
+.link-connect:hover {
+	color: $myBlack;
 }
 
-.decon{
-    display: flex;
-    flex-direction: row-reverse;
+.decon {
+	display: flex;
+	flex-direction: row-reverse;
 }
 
 /*------------Connexion/pageAdmin---------*/
 
-.box-admin{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 2em;
+.box-admin {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 2em;
 }
 
-.action-admin{
-    height: 15%;
-    padding: 20px;
+.action-admin {
+	padding: 20px;
 }
 
-.action-admin a{
-    color: $myRed;
-    font-size: 1.2rem;
+.action-admin a {
+	color: $myRed;
+	font-size: 1.2rem;
 }
 
-.containerCarAdd h3{
-    background: none;
-    padding-top: 1.5em;
+.containerCarAdd h3 {
+	background: none;
+	padding-top: 1.5em;
 }
 
-.cnx, .carAdd {
-    height: 70%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.cnx,
+.carAdd {
+	height: 70%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.containerCarAdd{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    border: 1px solid black;
-    margin-bottom: 1.5em;
+.containerCarAdd {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	border: 1px solid black;
+	margin-bottom: 1.5em;
 }
 
-.carAdd form{
-    width: 50%;
+.carAdd form {
+	width: 50%;
 }
 
-.carAdd form div{
-    padding: 10px;
+.carAdd form div {
+	padding: 10px;
 }
 
-.carAdd form div:nth-child(8){
-    display: flex;
-    justify-content: center;
+.carAdd form div:nth-child(8) {
+	display: flex;
+	justify-content: center;
 }
 
-.carAdd form div:nth-child(7){
-    margin-top: 5px;
+.carAdd form div:nth-child(7) {
+	margin-top: 5px;
 }
 
-.carAdd{
-    width: 100%;
-    flex-direction: column;
-    height: 100%;    
+.carAdd {
+	width: 100%;
+	flex-direction: column;
+	height: 100%;
 }
 
-.carAdd input, .carAdd textarea{
-    width: 100%;
-    margin: 0.8rem;
-    padding: 10px;
-    border:1px solid grey;
+.carAdd input,
+.carAdd textarea {
+	width: 100%;
+	margin: 0.8rem;
+	padding: 10px;
+	border: 1px solid grey;
 }
 
-.infos-footer-admin{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.infos-footer-admin {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /*----------------Inscriptions----------------*/
 
-.container-inscription{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    height: 50%;
+.container-inscription {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	height: 50%;
 }
 
-.container-inscription form{
-    padding: 15%;
-    display: flex;
-    flex-direction: column;
+.container-inscription form {
+	padding: 15%;
+	display: flex;
+	flex-direction: column;
 }
 
-.container-inscription input{
-    margin: 1.5em;
-    width: 100%;
-    border: 2px solid grey;
+.container-inscription input {
+	margin: 1.5em;
+	width: 100%;
+	border: 2px solid grey;
 }
 
 /*-----------------Main-----------------*/
-main, .container-used-cars,.infos,.mecanic,.container-avis-client{
-    margin: 15px 250px;
+main,
+.container-used-cars,
+.infos,
+.mecanic,
+.container-avis-client {
+	margin: 15px 250px;
 }
 
-.infos h3{
-    color: $myWhite;
-    margin-top: 1em;
+.infos h3,
+.container-used-cars h3 {
+	color: $myWhite;
+	margin-top: 1em;
 }
 
-.container-avis-client h2{
-    text-decoration: underline;
-    padding: 1em;
+.container-avis-client h2 {
+	text-decoration: underline;
+	padding: 1em;
 }
 
-.garagiste-div{   
-    display: inline-block;
-    align-items: center;
+.garagiste-div {
+	display: inline-block;
+	align-items: center;
+	width: 60%;
 }
 
-.garagiste{
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    
+.garagiste {
+	width: 100%;
+	height: 100%;
+	align-items: center;
 }
 
-.mecanic{
-    display: inline-flex;
+.mecanic {
+	// display: inline-flex;
+	margin-left: 250px;
+	display: flex;
+	justify-content: center;
 }
 
-h3{
-    background-color: $myDarkRed;
-    text-align: center;
-    color: $myWhite;
-    border: none;
+h3 {
+	background-color: $myDarkRed;
+	text-align: center;
+	color: $myWhite;
+	border: none;
 }
 
-.services{
-    background-color: $myDarkRed;
-    color: $myWhite;
-    font-size: 1.2rem;
+.services {
+	background-color: $myDarkRed;
+	color: $myWhite;
+	font-size: 1.2rem;
 }
 
-.services div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+.services div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
 }
 
-.services li{
-    list-style-type: none;
-    padding-top: 10px;
+.services li {
+	list-style-type: none;
+	padding-top: 10px;
 }
 
-#services-container{
-    padding: 2em;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-    font-size: 1.1em;
+#services-container {
+	padding: 2em;
+	// display: flex;
+	// flex-direction: column;
+	// align-items: center;
+	// justify-content: center;
+	font-size: 1.1em;
 }
 
-#services-container li{
-    list-style-type:circle;
+#services-container li {
+	list-style-type: circle;
 }
-
 
 /*----------------Used-cars-------------------*/
 
-.container-link-to-used-cars{
-    display: flex;
-    flex-direction:column ;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    height: 20em;
+.container-link-to-used-cars {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	height: 20em;
 }
 
-.div-img-car{
-    display: flex;
-    align-items: center;
-    height: 15rem;
+.div-img-car {
+	display: flex;
+	align-items: center;
+	height: 15rem;
 }
 
-.container-link-to-used-cars h2{
-    border: 3px solid black;
-    padding: 1.5em;
+.container-link-to-used-cars h2 {
+	border: 3px solid black;
+	padding: 1.5em;
 }
 
-.btn-warning{
-    width: 8em;
-    height: 3em;
-    font-weight: bold;
-    font-size: 2em;
+.btn-warning {
+	width: 8em;
+	height: 3em;
+	font-weight: bold;
+	font-size: 2em;
 }
 
-.used-cars{
-    margin-top: 15px;
+.used-cars {
+	margin-top: 15px;
 }
 
-.used-cars h3{
-    color: white;
+.used-cars h3 {
+	color: white;
 }
 
-.filters{
-    display: flex;
-    justify-content: space-between;
+.filters {
+	display: flex;
+	justify-content: space-between;
 }
 
-.btn-filter.btn-dtl{
-    width: auto
+.btn-filter.btn-dtl {
+	width: auto;
 }
 
-.infoPrice, .infoKm, .infoYear{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.infoPrice,
+.infoKm,
+.infoYear {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.filters input[type="submit"]{
-    margin-top: 10px;
+.filters input[type="submit"] {
+	margin-top: 10px;
 }
 
-.col{
-    display: flex;
-    justify-content: center;
+.col {
+	display: flex;
+	justify-content: center;
 }
 
-.card{
-    width: 18rem;
-    height: 40rem;
+.card {
+	width: 18rem;
+	height: 40rem;
 }
 
-.card.inactive{
-   display: none;
+.card.inactive {
+	display: none;
 }
 
-.list-cars img{
-    height:190px;
+.list-cars img {
+	height: 190px;
 }
 
-.card-body h5{
-    color: $myDarkRed;
+.card-body h5 {
+	color: $myDarkRed;
 }
 
-.description-cars{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: space-between;
+.description-cars {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: space-between;
 }
 
-.description-left{
-    text-align: left;
+.description-left {
+	text-align: left;
 }
-.description-left p{
-    font-size: 1.2em;
-}
-
-.description-right p{
-    font-size: 2rem;
-    font-weight: bold;
-    padding-top: 50px;
-    color: $myRed;
+.description-left p {
+	font-size: 1.2em;
 }
 
-#carouselExample{
-    height:300px;
+.description-right p {
+	font-size: 2rem;
+	font-weight: bold;
+	padding-top: 50px;
+	color: $myRed;
 }
 
-.carousel-inner{
-    height: 100%;
+#carouselExample {
+	height: 300px;
 }
 
-.carousel-item{
-    height: 100%;
+.carousel-inner {
+	height: 100%;
 }
 
-.carousel-item img{
-    height: auto;
+.carousel-item {
+	height: 100%;
 }
 
-.container-cars{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 10px;
-    flex-wrap: wrap
+.carousel-item img {
+	height: auto;
 }
 
-.button-details{
-    text-align: center;
-    padding: 10px;   
+.container-cars {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 10px;
+	flex-wrap: wrap;
 }
 
-.details, .contact-auto{
-    display: flex;
-    justify-content: center;
+.button-details {
+	text-align: center;
+	padding: 10px;
 }
 
-.contact-auto{
-    flex-direction: column;
-    align-items: center;
+.details,
+.contact-auto {
+	display: flex;
+	justify-content: center;
+}
+
+.contact-auto {
+	flex-direction: column;
+	align-items: center;
 }
 
 .custom-popover {
-    --bs-popover-max-width: 200px;
-    --bs-popover-border-color: var(--bs-primary);
-    --bs-popover-header-bg: var(--bs-primary);
-    --bs-popover-header-color: var(--bs-white);
-    --bs-popover-body-padding-x: 1rem;
-    --bs-popover-body-padding-y: .5rem;
-  }
+	--bs-popover-max-width: 200px;
+	--bs-popover-border-color: var(--bs-primary);
+	--bs-popover-header-bg: var(--bs-primary);
+	--bs-popover-header-color: var(--bs-white);
+	--bs-popover-body-padding-x: 1rem;
+	--bs-popover-body-padding-y: 0.5rem;
+}
 
 /*--------------------Contact--------------*/
 
-.contact-tel{
-    padding-top: 30px;
-    text-align: center;
+.contact-tel {
+	padding-top: 30px;
+	text-align: center;
 }
 
-.coms-place{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.coms-place {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
-.pseudo-coms{
-    border: 5px solid rgb(180, 180, 180);
-    width: 60%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;    
+.pseudo-coms {
+	border: 5px solid rgb(180, 180, 180);
+	width: 60%;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
 }
 
-.coms{
-    border: 5px solid $myDarkRed;
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+.coms {
+	border: 5px solid $myDarkRed;
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
 }
 
-.date-coms{
-    width: 60%;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    text-align: end;
+.date-coms {
+	width: 60%;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	text-align: end;
 }
 
 /*------------------Avis-----------------*/
 
-.rect-red{
-    background: $myDarkRed;
-    height: 10px;
-    width: 100%;
+.rect-red {
+	background: $myDarkRed;
+	height: 10px;
+	width: 100%;
 }
 
-.container-avis-client h2{
-    text-align: center;
+.container-avis-client h2 {
+	text-align: center;
 }
 
-.avis-client{
-    display: flex;
+.avis-client {
+	display: flex;
 }
 
-.avis-client-left{
-    border: 3px solid black;
+.avis-client-left {
+	border: 3px solid black;
 }
 
-.avis-client-left div{
-    padding: 1em;
-    background: #8A1D1B;
-    color: #F4F4F4;
-    border-radius: 15px;
-    font-size: 1.5em;
+.avis-client-left div {
+	padding: 1em;
+	background: #8a1d1b;
+	color: #f4f4f4;
+	border-radius: 15px;
+	font-size: 1.5em;
 }
 
-.give-avis{
-    display: flex;
-    justify-content: center;
-    margin-top: 2em;
+.give-avis {
+	display: flex;
+	justify-content: center;
+	margin-top: 2em;
 }
 
-.give-avis button, .container-link-to-used-cars button, .infos-footer, .back-to-top{
-    width: auto;
-    font-weight: bold;
-    font-size: 1.2rem;
-    box-shadow: 5px 5px 5px #060606;
+.give-avis button,
+.container-link-to-used-cars button,
+.infos-footer,
+.back-to-top {
+	width: auto;
+	font-weight: bold;
+	font-size: 1.2rem;
+	box-shadow: 5px 5px 5px #060606;
 }
 
-.avis-client-left{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 15px;
+.avis-client-left {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding: 15px;
 }
 
-.avis-client-right{
-    width: 40%;
-    display: flex;
-    align-items: center;
+.avis-client-right {
+	width: 40%;
+	display: flex;
+	align-items: center;
 }
 
-.avis-client-right img{
-    width: 100%;
+.avis-client-right img {
+	width: 100%;
 }
 
-
-
-.container-commentaire{
-    padding: 30px;
+.container-commentaire {
+	padding: 30px;
 }
 
 /*----------------infos----------------*/
 
-.infos{  
-display: inline-block;
+.infos {
+	display: inline-block;
 }
 
-.container-infos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container-infos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.infos-left{
-    width: 40%;
+.infos-left {
+	width: 40%;
 }
 
-.infos-right{
-    width: 60%;
-    text-align: end;
+.infos-right {
+	width: 60%;
+	text-align: end;
 }
 
-.photo-garage, .horaires{
-    width:100%;
+.photo-garage,
+.horaires {
+	width: 100%;
 }
 
-.horaires{
-    background-color: #585E66;
-    color: white;
-    border-radius: 15px;
-    margin-top: 10px;
-    text-align: center;
-    display: none;
+.horaires {
+	background-color: #585e66;
+	color: white;
+	border-radius: 15px;
+	margin-top: 10px;
+	text-align: center;
+	display: none;
 }
 
-.photo-plan{
-    width: 90%;
+.photo-plan {
+	width: 90%;
 }
 /*------------Footer-----------------*/
 
-
-footer{
-    position: relative;
-    width: 100%;
-    font-size: 1.2rem;
-    font-weight: bold;
-       
+footer {
+	position: relative;
+	width: 100%;
+	font-size: 1.2rem;
+	font-weight: bold;
 }
 
-.infos-footer{
-    width: 100%;
-    background-color: $myDarkRed;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.infos-footer {
+	width: 100%;
+	background-color: $myDarkRed;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
-.back-to-top{
-    font-weight: bold;
-    font-size: 1.2rem;
+.back-to-top {
+	font-weight: bold;
+	font-size: 1.2rem;
 }
 
-.note{
-    color: $myBlack;
+.note {
+	color: $myBlack;
 }
 
-.logo-trophee{
-    width: 75px;
+.logo-trophee {
+	width: 75px;
 }
 
-footer a{
-    color: $myBlack;
+footer a {
+	color: $myBlack;
 }
 
-footer a:hover{
-    color: $myWhite;
+footer a:hover {
+	color: $myWhite;
 }
 
-footer span{
-    color: $myBlack;
+footer span {
+	color: $myBlack;
 }
 
-.horaires-replace{
-    display: none;
+.horaires-replace {
+	display: none;
 }
 
 /*-------------------------Bouton Success-----------------------*/
 
 #message-success {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #009b05; 
-    color: white; 
-    padding: 15px;
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: bold;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #009b05;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
 }

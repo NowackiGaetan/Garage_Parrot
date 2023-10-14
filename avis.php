@@ -34,7 +34,6 @@ require('meta.php');
             $reqComs->bindParam(':pseudo', $_POST['pseudo']);
             $reqComs->bindParam(':coms', $_POST['coms']);
             $reqComs->bindParam(':date_coms', $NOW);
-            $reqComs->execute();
 
             try {
                 $reqComs->execute();

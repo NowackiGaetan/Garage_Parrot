@@ -12,14 +12,14 @@ if (isset($_POST['addCar'])) {
         if (is_uploaded_file($_FILES['addCarImg']['tmp_name'][$i])) {
             //First, Validate the file name
             if (empty($_FILES['addCarImg']['name'][$i])) {
-                echo " File name is empty! ";
+                echo " Le nom du fichier est vide ! ";
                 exit;
             }
 
             $upload_file_name = $_FILES['addCarImg']['name'][$i];
             //Too long file name?
             if (strlen($upload_file_name) > 100) {
-                echo " too long file name ";
+                echo " Le nom est trop long. ";
                 exit;
             }
 
@@ -28,7 +28,7 @@ if (isset($_POST['addCar'])) {
 
             //set a limit to the file upload size
             if ($_FILES['addCarImg']['size'][$i] > 1000000) {
-                echo " too big file ";
+                echo " Fichier trop volumineux. ";
                 exit;
             }
 
@@ -36,7 +36,6 @@ if (isset($_POST['addCar'])) {
             $dest = __DIR__ . '/assets/photo/' . $upload_file_name;
             if (move_uploaded_file($_FILES['addCarImg']['tmp_name'][$i], $dest)) {
                 $photos[$i] = $upload_file_name;
-                echo "File $upload_file_name Has Been Uploaded !";
             }
         }
     }
@@ -76,6 +75,8 @@ if (isset($_POST['addCar'])) {
 <div class="action-admin">
     <a href="inscription.php">Inscrire un nouvel employé</a><br><br>
     <a href="validation-coms.php">Traiter les commentaires clients</a>
+    <br><br>
+    <a href="list-cars-admin.php">Accès à liste des véhicules</a>
 </div>
 <div class="box-admin">
     <div class="containerCarAdd">

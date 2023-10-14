@@ -23,18 +23,18 @@ header {
 }
 
 #connect {
-  color: #585E66;
+  color: #585e66;
   background: white;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 .navbar-text label {
-  color: #8A1D1B;
+  color: #8a1d1b;
 }
 
 .link-connect:hover {
-  color: #0D0E0E;
+  color: #0d0e0e;
 }
 
 .decon {
@@ -48,11 +48,10 @@ header {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 0 2em;
+  margin: 2em;
 }
 
 .action-admin {
-  height: 15%;
   padding: 20px;
 }
 
@@ -66,7 +65,8 @@ header {
   padding-top: 1.5em;
 }
 
-.cnx, .carAdd {
+.cnx,
+.carAdd {
   height: 70%;
   width: 100%;
   display: flex;
@@ -107,7 +107,8 @@ header {
   height: 100%;
 }
 
-.carAdd input, .carAdd textarea {
+.carAdd input,
+.carAdd textarea {
   width: 100%;
   margin: 0.8rem;
   padding: 10px;
@@ -141,12 +142,17 @@ header {
 }
 
 /*-----------------Main-----------------*/
-main, .container-used-cars, .infos, .mecanic, .container-avis-client {
+main,
+.container-used-cars,
+.infos,
+.mecanic,
+.container-avis-client {
   margin: 15px 250px;
 }
 
-.infos h3 {
-  color: #F4F4F4;
+.infos h3,
+.container-used-cars h3 {
+  color: #f4f4f4;
   margin-top: 1em;
 }
 
@@ -158,6 +164,7 @@ main, .container-used-cars, .infos, .mecanic, .container-avis-client {
 .garagiste-div {
   display: inline-block;
   align-items: center;
+  width: 60%;
 }
 
 .garagiste {
@@ -167,19 +174,21 @@ main, .container-used-cars, .infos, .mecanic, .container-avis-client {
 }
 
 .mecanic {
-  display: inline-flex;
+  margin-left: 250px;
+  display: flex;
+  justify-content: center;
 }
 
 h3 {
-  background-color: #8A1D1B;
+  background-color: #8a1d1b;
   text-align: center;
-  color: #F4F4F4;
+  color: #f4f4f4;
   border: none;
 }
 
 .services {
-  background-color: #8A1D1B;
-  color: #F4F4F4;
+  background-color: #8a1d1b;
+  color: #f4f4f4;
   font-size: 1.2rem;
 }
 
@@ -249,7 +258,9 @@ h3 {
   width: auto;
 }
 
-.infoPrice, .infoKm, .infoYear {
+.infoPrice,
+.infoKm,
+.infoYear {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -279,7 +290,7 @@ h3 {
 }
 
 .card-body h5 {
-  color: #8A1D1B;
+  color: #8a1d1b;
 }
 
 .description-cars {
@@ -334,7 +345,8 @@ h3 {
   padding: 10px;
 }
 
-.details, .contact-auto {
+.details,
+.contact-auto {
   display: flex;
   justify-content: center;
 }
@@ -350,7 +362,7 @@ h3 {
   --bs-popover-header-bg: var(--bs-primary);
   --bs-popover-header-color: var(--bs-white);
   --bs-popover-body-padding-x: 1rem;
-  --bs-popover-body-padding-y: .5rem;
+  --bs-popover-body-padding-y: 0.5rem;
 }
 
 /*--------------------Contact--------------*/
@@ -378,7 +390,7 @@ h3 {
 }
 
 .coms {
-  border: 5px solid #8A1D1B;
+  border: 5px solid #8a1d1b;
   width: 60%;
   display: flex;
   justify-content: center;
@@ -397,7 +409,7 @@ h3 {
 
 /*------------------Avis-----------------*/
 .rect-red {
-  background: #8A1D1B;
+  background: #8a1d1b;
   height: 10px;
   width: 100%;
 }
@@ -416,8 +428,8 @@ h3 {
 
 .avis-client-left div {
   padding: 1em;
-  background: #8A1D1B;
-  color: #F4F4F4;
+  background: #8a1d1b;
+  color: #f4f4f4;
   border-radius: 15px;
   font-size: 1.5em;
 }
@@ -428,7 +440,10 @@ h3 {
   margin-top: 2em;
 }
 
-.give-avis button, .container-link-to-used-cars button, .infos-footer, .back-to-top {
+.give-avis button,
+.container-link-to-used-cars button,
+.infos-footer,
+.back-to-top {
   width: auto;
   font-weight: bold;
   font-size: 1.2rem;
@@ -478,12 +493,13 @@ h3 {
   text-align: end;
 }
 
-.photo-garage, .horaires {
+.photo-garage,
+.horaires {
   width: 100%;
 }
 
 .horaires {
-  background-color: #585E66;
+  background-color: #585e66;
   color: white;
   border-radius: 15px;
   margin-top: 10px;
@@ -505,7 +521,7 @@ footer {
 
 .infos-footer {
   width: 100%;
-  background-color: #8A1D1B;
+  background-color: #8a1d1b;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -517,7 +533,7 @@ footer {
 }
 
 .note {
-  color: #0D0E0E;
+  color: #0d0e0e;
 }
 
 .logo-trophee {
@@ -525,15 +541,15 @@ footer {
 }
 
 footer a {
-  color: #0D0E0E;
+  color: #0d0e0e;
 }
 
 footer a:hover {
-  color: #F4F4F4;
+  color: #f4f4f4;
 }
 
 footer span {
-  color: #0D0E0E;
+  color: #0d0e0e;
 }
 
 .horaires-replace {

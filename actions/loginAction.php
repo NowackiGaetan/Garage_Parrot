@@ -8,7 +8,6 @@ if (!isset($_SESSION['csrf_token'])) {
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
-        // Jeton CSRF invalide, gérer l'erreur (par exemple, rediriger l'utilisateur ou afficher un message d'erreur)
         die("Erreur CSRF. Accès non autorisé.");
     }
     //Validation du formulaire

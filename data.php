@@ -24,8 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
 
         if (isset($_GET["filterYear"]) && $_GET["filterYear"] !== "") {
             $filterYear = $_GET["filterYear"];
-            $sql .= " AND year > $filterYear";
-            $filters[] = "year > :filterYear";
+            $sql .= " AND year >= $filterYear";
+            $filters[] = "year >= :filterYear";
             $params['filterYear'] = $filterYear;
         }
 
