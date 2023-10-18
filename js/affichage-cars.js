@@ -5,7 +5,7 @@ $(document).ready(function(){
         var filterKilometrage = $("#filterKilometrage").val();
         var filterYear = $("#filterYear").val();
         $.ajax({
-            url: "data.php",
+            url: "filters-cars.php",
             method: "GET",
             data : {
                 data: "fetch_data",

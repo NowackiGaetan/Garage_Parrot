@@ -13,7 +13,7 @@ Pour la connexion Admin:
 
 Pour alimenter la bdd en voiture:
 -remplir tout les champs
--pour les photos, FORMAT JPG, la photo principale est aussi la première photo du caroussel. La BDD indique à uen colonne qui indique le chemin de la photo.
+-pour les photos, FORMAT JPG, la photo principale est aussi la première photo du caroussel. La BDD indique à une colonne qui indique le chemin de la photo.
 
 Pour ajouter un employé: email et mot de passe.
 
